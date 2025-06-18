@@ -1,0 +1,3942 @@
+{
+  "analysis": {
+    "node_pairs": [
+      {
+        "pair_name": "intel_102-21",
+        "src_ip": "10.255.0.102",
+        "dst_ip": "10.255.0.21",
+        "direction": "10.255.0.102->10.255.0.21"
+      },
+      {
+        "pair_name": "intel_21-102",
+        "src_ip": "10.255.0.21",
+        "dst_ip": "10.255.0.102",
+        "direction": "10.255.0.21->10.255.0.102"
+      }
+    ],
+    "timestamp": "2025-05-30T07:22:02.984014",
+    "total_sessions": 92,
+    "matched_sessions": 12,
+    "outgoing_only": 79,
+    "incoming_only": 1,
+    "valid_sessions": [
+      {
+        "session_key": "intel_21-102_55566_2055",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 12:15:39.242",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 55566,
+          "seq": 2055,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f1bc4d03800",
+            "1": "0xff182f1bc4d03800",
+            "2": "0xff182f1bc4d03800",
+            "5": "0xff182f1bc4d03400",
+            "6": "0xff182f1bc4d03400",
+            "7": "0xff182f1b5a53aa00",
+            "8": "0xff182f1b5a53aa00",
+            "9": "0xff182f1b5a53aa00",
+            "12": "0xff182f1b5a53b500",
+            "13": "0xff182f1b5a53b500"
+          },
+          "total_rtt": 95626.384,
+          "max_stage": "Path2_9->12",
+          "max_latency": 74.498,
+          "path1_latencies": {
+            "0->1": 12.23,
+            "1->2": 6.563,
+            "2->5": 52.54,
+            "5->6": 7.404
+          },
+          "path2_latencies": {
+            "7->8": 15.98,
+            "8->9": 7.426,
+            "9->12": 74.498,
+            "12->13": 50.789
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 12:15:39.245",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 55566,
+          "seq": 2055,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6e00",
+            "1": "0xffff8f3c158e6e00",
+            "2": "0xffff8f3c158e6e00",
+            "5": "0xffff8f3c158e7300",
+            "6": "0xffff8f3c158e7300",
+            "7": "0xffff8f3c158e6200",
+            "8": "0xffff8f3c158e6200",
+            "9": "0xffff8f3c158e6200",
+            "12": "0xffff8f3c158e6f00",
+            "13": "0xffff8f3c158e6f00"
+          },
+          "total_rtt": 95344.144,
+          "max_stage": "Path1_5->6",
+          "max_latency": 95195.487,
+          "path1_latencies": {
+            "0->1": 20.731,
+            "1->2": 9.627,
+            "2->5": 39.983,
+            "5->6": 95195.487
+          },
+          "path2_latencies": {
+            "7->8": 10.02,
+            "8->9": 9.862,
+            "9->12": 32.263,
+            "12->13": 6.177
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 55566,
+        "seq": 2055,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 74.498,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 95195.487,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 95195.487,
+        "physical_network_delay": 141.12000000000262,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 12.23,
+          "1->2": 6.563,
+          "2->5": 52.54,
+          "5->6": 7.404
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 15.98,
+          "8->9": 7.426,
+          "9->12": 74.498,
+          "12->13": 50.789
+        },
+        "incoming_path1_latencies": {
+          "0->1": 20.731,
+          "1->2": 9.627,
+          "2->5": 39.983,
+          "5->6": 95195.487
+        },
+        "incoming_path2_latencies": {
+          "7->8": 10.02,
+          "8->9": 9.862,
+          "9->12": 32.263,
+          "12->13": 6.177
+        },
+        "outgoing_total_rtt": 95626.384,
+        "incoming_total_rtt": 95344.144,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_30120_1023",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 12:30:39.445",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 30120,
+          "seq": 1023,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182ec7a6b1fd00",
+            "1": "0xff182ec7a6b1fd00",
+            "2": "0xff182ec7a6b1fd00",
+            "5": "0xff182ec7a6b1f800",
+            "6": "0xff182ec7a6b1f800",
+            "7": "0xff182f1bc4d03000",
+            "8": "0xff182f1bc4d03000",
+            "9": "0xff182f1bc4d03000",
+            "12": "0xff182f1bc4d02300",
+            "13": "0xff182f1bc4d02300"
+          },
+          "total_rtt": 11222.74,
+          "max_stage": "Path2_9->12",
+          "max_latency": 93.957,
+          "path1_latencies": {
+            "0->1": 16.103,
+            "1->2": 7.542,
+            "2->5": 76.833,
+            "5->6": 4.255
+          },
+          "path2_latencies": {
+            "7->8": 18.083,
+            "8->9": 8.117,
+            "9->12": 93.957,
+            "12->13": 59.03
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 12:30:39.446",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 30120,
+          "seq": 1023,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6200",
+            "1": "0xffff8f3c158e6200",
+            "2": "0xffff8f3c158e6200",
+            "5": "0xffff8f3c158e6000",
+            "6": "0xffff8f3c158e6000",
+            "7": "0xffff8f3c158e6200",
+            "8": "0xffff8f3c158e6200",
+            "9": "0xffff8f3c158e6200",
+            "12": "0xffff8f3c158e7100",
+            "13": "0xffff8f3c158e7100"
+          },
+          "total_rtt": 10880.668,
+          "max_stage": "Path1_5->6",
+          "max_latency": 10734.013,
+          "path1_latencies": {
+            "0->1": 20.575,
+            "1->2": 9.907,
+            "2->5": 35.997,
+            "5->6": 10734.013
+          },
+          "path2_latencies": {
+            "7->8": 9.937,
+            "8->9": 9.503,
+            "9->12": 30.416,
+            "12->13": 6.126
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 30120,
+        "seq": 1023,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 93.957,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 10734.013,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 10734.013,
+        "physical_network_delay": 171.03600000000006,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 16.103,
+          "1->2": 7.542,
+          "2->5": 76.833,
+          "5->6": 4.255
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 18.083,
+          "8->9": 8.117,
+          "9->12": 93.957,
+          "12->13": 59.03
+        },
+        "incoming_path1_latencies": {
+          "0->1": 20.575,
+          "1->2": 9.907,
+          "2->5": 35.997,
+          "5->6": 10734.013
+        },
+        "incoming_path2_latencies": {
+          "7->8": 9.937,
+          "8->9": 9.503,
+          "9->12": 30.416,
+          "12->13": 6.126
+        },
+        "outgoing_total_rtt": 11222.74,
+        "incoming_total_rtt": 10880.668,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_48299_375",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 12:50:15.434",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 48299,
+          "seq": 375,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f0a827a7200",
+            "1": "0xff182f0a827a7200",
+            "2": "0xff182f0a827a7200",
+            "5": "0xff182f0a827a6e00",
+            "6": "0xff182f0a827a6e00",
+            "7": "0xff182f0956414b00",
+            "8": "0xff182f0956414b00",
+            "9": "0xff182f0956414b00",
+            "12": "0xff182f0956414100",
+            "13": "0xff182f0956414100"
+          },
+          "total_rtt": 90936.854,
+          "max_stage": "Path2_9->12",
+          "max_latency": 86.073,
+          "path1_latencies": {
+            "0->1": 15.639,
+            "1->2": 7.009,
+            "2->5": 77.358,
+            "5->6": 4.644
+          },
+          "path2_latencies": {
+            "7->8": 17.12,
+            "8->9": 7.712,
+            "9->12": 86.073,
+            "12->13": 63.222
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 12:50:15.434",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 48299,
+          "seq": 375,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7d00",
+            "1": "0xffff8f3c158e7d00",
+            "2": "0xffff8f3c158e7d00",
+            "5": "0xffff8f3c158e7600",
+            "6": "0xffff8f3c158e7600",
+            "7": "0xffff8f3c158e6300",
+            "8": "0xffff8f3c158e6300",
+            "9": "0xffff8f3c158e6300",
+            "12": "0xffff8f3c158e7400",
+            "13": "0xffff8f3c158e7400"
+          },
+          "total_rtt": 90604.449,
+          "max_stage": "Path1_5->6",
+          "max_latency": 90457.166,
+          "path1_latencies": {
+            "0->1": 17.549,
+            "1->2": 7.975,
+            "2->5": 34.103,
+            "5->6": 90457.166
+          },
+          "path2_latencies": {
+            "7->8": 10.172,
+            "8->9": 11.087,
+            "9->12": 34.717,
+            "12->13": 6.369
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 48299,
+        "seq": 375,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 86.073,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 90457.166,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 90457.166,
+        "physical_network_delay": 166.2025000000067,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 15.639,
+          "1->2": 7.009,
+          "2->5": 77.358,
+          "5->6": 4.644
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 17.12,
+          "8->9": 7.712,
+          "9->12": 86.073,
+          "12->13": 63.222
+        },
+        "incoming_path1_latencies": {
+          "0->1": 17.549,
+          "1->2": 7.975,
+          "2->5": 34.103,
+          "5->6": 90457.166
+        },
+        "incoming_path2_latencies": {
+          "7->8": 10.172,
+          "8->9": 11.087,
+          "9->12": 34.717,
+          "12->13": 6.369
+        },
+        "outgoing_total_rtt": 90936.854,
+        "incoming_total_rtt": 90604.449,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_48299_1983",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 12:50:23.675",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 48299,
+          "seq": 1983,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f1a2dc31f00",
+            "1": "0xff182f1a2dc31f00",
+            "2": "0xff182f1a2dc31f00",
+            "5": "0xff182f1a2dc30a00",
+            "6": "0xff182f1a2dc30a00",
+            "7": "0xff182f0956415f00",
+            "8": "0xff182f0956415f00",
+            "9": "0xff182f0956415f00",
+            "12": "0xff182f0956414900",
+            "13": "0xff182f0956414900"
+          },
+          "total_rtt": 236394.325,
+          "max_stage": "Path1_2->5",
+          "max_latency": 78.094,
+          "path1_latencies": {
+            "0->1": 15.067,
+            "1->2": 7.199,
+            "2->5": 78.094,
+            "5->6": 4.643
+          },
+          "path2_latencies": {
+            "7->8": 6.757,
+            "8->9": 3.067,
+            "9->12": 75.758,
+            "12->13": 41.118
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 12:50:23.683",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 48299,
+          "seq": 1983,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7700",
+            "1": "0xffff8f3c158e7700",
+            "2": "0xffff8f3c158e7700",
+            "5": "0xffff8f3c158e6f00",
+            "6": "0xffff8f3c158e6f00",
+            "7": "0xffff8f3c158e7800",
+            "8": "0xffff8f3c158e7800",
+            "9": "0xffff8f3c158e7800",
+            "12": "0xffff8f3c158e7f00",
+            "13": "0xffff8f3c158e7f00"
+          },
+          "total_rtt": 121917.254,
+          "max_stage": "Path1_5->6",
+          "max_latency": 121807.619,
+          "path1_latencies": {
+            "0->1": 7.575,
+            "1->2": 3.483,
+            "2->5": 21.948,
+            "5->6": 121807.619
+          },
+          "path2_latencies": {
+            "7->8": 9.965,
+            "8->9": 10.178,
+            "9->12": 33.395,
+            "12->13": 7.385
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 48299,
+        "seq": 1983,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path1_2->5",
+        "outgoing_max_latency": 78.094,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 121807.619,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 121807.619,
+        "physical_network_delay": 57238.535500000005,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 15.067,
+          "1->2": 7.199,
+          "2->5": 78.094,
+          "5->6": 4.643
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 6.757,
+          "8->9": 3.067,
+          "9->12": 75.758,
+          "12->13": 41.118
+        },
+        "incoming_path1_latencies": {
+          "0->1": 7.575,
+          "1->2": 3.483,
+          "2->5": 21.948,
+          "5->6": 121807.619
+        },
+        "incoming_path2_latencies": {
+          "7->8": 9.965,
+          "8->9": 10.178,
+          "9->12": 33.395,
+          "12->13": 7.385
+        },
+        "outgoing_total_rtt": 236394.325,
+        "incoming_total_rtt": 121917.254,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_5698_2103",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:10:43.170",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 5698,
+          "seq": 2103,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f199658d300",
+            "1": "0xff182f199658d300",
+            "2": "0xff182f199658d300",
+            "5": "0xff182f199658d100",
+            "6": "0xff182f199658d100",
+            "7": "0xff182ed0191ebb00",
+            "8": "0xff182ed0191ebb00",
+            "9": "0xff182ed0191ebb00",
+            "12": "0xff182ed0191eab00",
+            "13": "0xff182ed0191eab00"
+          },
+          "total_rtt": 40713.558,
+          "max_stage": "Path1_2->5",
+          "max_latency": 85.106,
+          "path1_latencies": {
+            "0->1": 15.288,
+            "1->2": 8.283,
+            "2->5": 85.106,
+            "5->6": 5.339
+          },
+          "path2_latencies": {
+            "7->8": 18.436,
+            "8->9": 7.822,
+            "9->12": 83.801,
+            "12->13": 56.046
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:10:43.170",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 5698,
+          "seq": 2103,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7700",
+            "1": "0xffff8f3c158e7700",
+            "2": "0xffff8f3c158e7700",
+            "5": "0xffff8f3c158e7100",
+            "6": "0xffff8f3c158e7100",
+            "7": "0xffff8f3c158e7200",
+            "8": "0xffff8f3c158e7200",
+            "9": "0xffff8f3c158e7200",
+            "12": "0xffff8f3c158e7500",
+            "13": "0xffff8f3c158e7500"
+          },
+          "total_rtt": 40377.582,
+          "max_stage": "Path1_5->6",
+          "max_latency": 40238.273,
+          "path1_latencies": {
+            "0->1": 16.933,
+            "1->2": 7.291,
+            "2->5": 28.56,
+            "5->6": 40238.273
+          },
+          "path2_latencies": {
+            "7->8": 9.595,
+            "8->9": 9.152,
+            "9->12": 40.832,
+            "12->13": 6.245
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 5698,
+        "seq": 2103,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path1_2->5",
+        "outgoing_max_latency": 85.106,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 40238.273,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 40238.273,
+        "physical_network_delay": 167.98799999999756,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 15.288,
+          "1->2": 8.283,
+          "2->5": 85.106,
+          "5->6": 5.339
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 18.436,
+          "8->9": 7.822,
+          "9->12": 83.801,
+          "12->13": 56.046
+        },
+        "incoming_path1_latencies": {
+          "0->1": 16.933,
+          "1->2": 7.291,
+          "2->5": 28.56,
+          "5->6": 40238.273
+        },
+        "incoming_path2_latencies": {
+          "7->8": 9.595,
+          "8->9": 9.152,
+          "9->12": 40.832,
+          "12->13": 6.245
+        },
+        "outgoing_total_rtt": 40713.558,
+        "incoming_total_rtt": 40377.582,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_18418_87",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:15:43.171",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 18418,
+          "seq": 87,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f18fff7dd00",
+            "1": "0xff182f18fff7dd00",
+            "2": "0xff182f18fff7dd00",
+            "5": "0xff182f27c480b600",
+            "6": "0xff182f27c480b600",
+            "7": "0xff182f1a4cfd8b00",
+            "8": "0xff182f1a4cfd8b00",
+            "9": "0xff182f1a4cfd8b00",
+            "12": "0xff182f1a4cfd9700",
+            "13": "0xff182f1a4cfd9700"
+          },
+          "total_rtt": 84214.075,
+          "max_stage": "Path2_9->12",
+          "max_latency": 73.107,
+          "path1_latencies": {
+            "0->1": 11.769,
+            "1->2": 6.014,
+            "2->5": 51.854,
+            "5->6": 3.625
+          },
+          "path2_latencies": {
+            "7->8": 16.815,
+            "8->9": 6.336,
+            "9->12": 73.107,
+            "12->13": 43.879
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:15:43.171",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 18418,
+          "seq": 87,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7200",
+            "1": "0xffff8f3c158e7200",
+            "2": "0xffff8f3c158e7200",
+            "5": "0xffff8f3c158e6500",
+            "6": "0xffff8f3c158e6500",
+            "7": "0xffff8f3c158e6100",
+            "8": "0xffff8f3c158e6100",
+            "9": "0xffff8f3c158e6100",
+            "12": "0xffff8f3c158e6f00",
+            "13": "0xffff8f3c158e6f00"
+          },
+          "total_rtt": 83942.877,
+          "max_stage": "Path1_5->6",
+          "max_latency": 83777.092,
+          "path1_latencies": {
+            "0->1": 20.245,
+            "1->2": 9.808,
+            "2->5": 41.218,
+            "5->6": 83777.092
+          },
+          "path2_latencies": {
+            "7->8": 13.315,
+            "8->9": 11.278,
+            "9->12": 37.979,
+            "12->13": 8.621
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 18418,
+        "seq": 87,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 73.107,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 83777.092,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 83777.092,
+        "physical_network_delay": 135.59900000000198,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 11.769,
+          "1->2": 6.014,
+          "2->5": 51.854,
+          "5->6": 3.625
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 16.815,
+          "8->9": 6.336,
+          "9->12": 73.107,
+          "12->13": 43.879
+        },
+        "incoming_path1_latencies": {
+          "0->1": 20.245,
+          "1->2": 9.808,
+          "2->5": 41.218,
+          "5->6": 83777.092
+        },
+        "incoming_path2_latencies": {
+          "7->8": 13.315,
+          "8->9": 11.278,
+          "9->12": 37.979,
+          "12->13": 8.621
+        },
+        "outgoing_total_rtt": 84214.075,
+        "incoming_total_rtt": 83942.877,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_2411_1935",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:35:16.099",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 2411,
+          "seq": 1935,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f49463c1000",
+            "1": "0xff182f49463c1000",
+            "2": "0xff182f49463c1000",
+            "5": "0xff182f49463c0800",
+            "6": "0xff182f49463c0800",
+            "7": "0xff182eafac48e500",
+            "8": "0xff182eafac48e500",
+            "9": "0xff182eafac48e500",
+            "12": "0xff182eafac48e200",
+            "13": "0xff182eafac48e200"
+          },
+          "total_rtt": 69403.195,
+          "max_stage": "Path2_9->12",
+          "max_latency": 73.059,
+          "path1_latencies": {
+            "0->1": 13.182,
+            "1->2": 6.801,
+            "2->5": 63.843,
+            "5->6": 4.051
+          },
+          "path2_latencies": {
+            "7->8": 17.644,
+            "8->9": 6.186,
+            "9->12": 73.059,
+            "12->13": 52.905
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:35:16.099",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 2411,
+          "seq": 1935,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6000",
+            "1": "0xffff8f3c158e6000",
+            "2": "0xffff8f3c158e6000",
+            "5": "0xffff8f3c158e7300",
+            "6": "0xffff8f3c158e7300",
+            "7": "0xffff8f3c158e7400",
+            "8": "0xffff8f3c158e7400",
+            "9": "0xffff8f3c158e7400",
+            "12": "0xffff8f3c158e6100",
+            "13": "0xffff8f3c158e6100"
+          },
+          "total_rtt": 69112.831,
+          "max_stage": "Path1_5->6",
+          "max_latency": 68986.048,
+          "path1_latencies": {
+            "0->1": 17.143,
+            "1->2": 7.665,
+            "2->5": 28.725,
+            "5->6": 68986.048
+          },
+          "path2_latencies": {
+            "7->8": 9.664,
+            "8->9": 9.282,
+            "9->12": 28.398,
+            "12->13": 5.36
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 2411,
+        "seq": 1935,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 73.059,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 68986.048,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 68986.048,
+        "physical_network_delay": 145.1820000000007,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 13.182,
+          "1->2": 6.801,
+          "2->5": 63.843,
+          "5->6": 4.051
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 17.644,
+          "8->9": 6.186,
+          "9->12": 73.059,
+          "12->13": 52.905
+        },
+        "incoming_path1_latencies": {
+          "0->1": 17.143,
+          "1->2": 7.665,
+          "2->5": 28.725,
+          "5->6": 68986.048
+        },
+        "incoming_path2_latencies": {
+          "7->8": 9.664,
+          "8->9": 9.282,
+          "9->12": 28.398,
+          "12->13": 5.36
+        },
+        "outgoing_total_rtt": 69403.195,
+        "incoming_total_rtt": 69112.831,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_25894_2391",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:45:12.859",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 25894,
+          "seq": 2391,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f1c90707500",
+            "1": "0xff182f1c90707500",
+            "2": "0xff182f1c90707500",
+            "5": "0xff182f1c90706b00",
+            "6": "0xff182f1c90706b00",
+            "7": "0xff182f0958de8b00",
+            "8": "0xff182f0958de8b00",
+            "9": "0xff182f0958de8b00",
+            "12": "0xff182f0958de9000",
+            "13": "0xff182f0958de9000"
+          },
+          "total_rtt": 70683.512,
+          "max_stage": "Path2_9->12",
+          "max_latency": 84.99,
+          "path1_latencies": {
+            "0->1": 17.659,
+            "1->2": 7.965,
+            "2->5": 84.985,
+            "5->6": 4.586
+          },
+          "path2_latencies": {
+            "7->8": 7.523,
+            "8->9": 3.129,
+            "9->12": 84.99,
+            "12->13": 54.95
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:45:12.859",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 25894,
+          "seq": 2391,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6000",
+            "1": "0xffff8f3c158e6000",
+            "2": "0xffff8f3c158e6000",
+            "5": "0xffff8f3c158e7700",
+            "6": "0xffff8f3c158e7700",
+            "7": "0xffff8f3c158e6000",
+            "8": "0xffff8f3c158e6000",
+            "9": "0xffff8f3c158e6000",
+            "12": "0xffff8f3c158e7600",
+            "13": "0xffff8f3c158e7600"
+          },
+          "total_rtt": 70356.951,
+          "max_stage": "Path1_5->6",
+          "max_latency": 70213.49,
+          "path1_latencies": {
+            "0->1": 18.638,
+            "1->2": 7.738,
+            "2->5": 33.345,
+            "5->6": 70213.49
+          },
+          "path2_latencies": {
+            "7->8": 10.564,
+            "8->9": 10.201,
+            "9->12": 34.455,
+            "12->13": 6.902
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 25894,
+        "seq": 2391,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 84.99,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 70213.49,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 70213.49,
+        "physical_network_delay": 163.28050000000076,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 17.659,
+          "1->2": 7.965,
+          "2->5": 84.985,
+          "5->6": 4.586
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 7.523,
+          "8->9": 3.129,
+          "9->12": 84.99,
+          "12->13": 54.95
+        },
+        "incoming_path1_latencies": {
+          "0->1": 18.638,
+          "1->2": 7.738,
+          "2->5": 33.345,
+          "5->6": 70213.49
+        },
+        "incoming_path2_latencies": {
+          "7->8": 10.564,
+          "8->9": 10.201,
+          "9->12": 34.455,
+          "12->13": 6.902
+        },
+        "outgoing_total_rtt": 70683.512,
+        "incoming_total_rtt": 70356.951,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_26475_183",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:45:16.060",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 26475,
+          "seq": 183,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f053d7a9c00",
+            "1": "0xff182f053d7a9c00",
+            "2": "0xff182f053d7a9c00",
+            "5": "0xff182f053d7a8b00",
+            "6": "0xff182f053d7a8b00",
+            "7": "0xff182f0958de9000",
+            "8": "0xff182f0958de9000",
+            "9": "0xff182f0958de9000",
+            "12": "0xff182f0958de8200",
+            "13": "0xff182f0958de8200"
+          },
+          "total_rtt": 40342.438,
+          "max_stage": "Path2_9->12",
+          "max_latency": 91.86,
+          "path1_latencies": {
+            "0->1": 17.174,
+            "1->2": 7.762,
+            "2->5": 80.923,
+            "5->6": 4.264
+          },
+          "path2_latencies": {
+            "7->8": 8.668,
+            "8->9": 3.757,
+            "9->12": 91.86,
+            "12->13": 59.804
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:45:16.059",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 26475,
+          "seq": 183,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7900",
+            "1": "0xffff8f3c158e7900",
+            "2": "0xffff8f3c158e7900",
+            "5": "0xffff8f3c158e7000",
+            "6": "0xffff8f3c158e7000",
+            "7": "0xffff8f3c158e6c00",
+            "8": "0xffff8f3c158e6c00",
+            "9": "0xffff8f3c158e6c00",
+            "12": "0xffff8f3c158e7500",
+            "13": "0xffff8f3c158e7500"
+          },
+          "total_rtt": 40013.788,
+          "max_stage": "Path1_5->6",
+          "max_latency": 39887.122,
+          "path1_latencies": {
+            "0->1": 15.699,
+            "1->2": 6.771,
+            "2->5": 28.353,
+            "5->6": 39887.122
+          },
+          "path2_latencies": {
+            "7->8": 9.568,
+            "8->9": 9.545,
+            "9->12": 30.304,
+            "12->13": 5.72
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 26475,
+        "seq": 183,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 91.86,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 39887.122,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 39887.122,
+        "physical_network_delay": 164.32500000000073,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 17.174,
+          "1->2": 7.762,
+          "2->5": 80.923,
+          "5->6": 4.264
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 8.668,
+          "8->9": 3.757,
+          "9->12": 91.86,
+          "12->13": 59.804
+        },
+        "incoming_path1_latencies": {
+          "0->1": 15.699,
+          "1->2": 6.771,
+          "2->5": 28.353,
+          "5->6": 39887.122
+        },
+        "incoming_path2_latencies": {
+          "7->8": 9.568,
+          "8->9": 9.545,
+          "9->12": 30.304,
+          "12->13": 5.72
+        },
+        "outgoing_total_rtt": 40342.438,
+        "incoming_total_rtt": 40013.788,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_21438_2055",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:55:33.537",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 21438,
+          "seq": 2055,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f1a49b62800",
+            "1": "0xff182f1a49b62800",
+            "2": "0xff182f1a49b62800",
+            "5": "0xff182f1a49b62b00",
+            "6": "0xff182f1a49b62b00",
+            "7": "0xff182e81641aab00",
+            "8": "0xff182e81641aab00",
+            "9": "0xff182e81641aab00",
+            "12": "0xff182e81641ab000",
+            "13": "0xff182e81641ab000"
+          },
+          "total_rtt": 62230.952,
+          "max_stage": "Path2_9->12",
+          "max_latency": 75.65,
+          "path1_latencies": {
+            "0->1": 12.355,
+            "1->2": 6.45,
+            "2->5": 62.425,
+            "5->6": 5.152
+          },
+          "path2_latencies": {
+            "7->8": 15.122,
+            "8->9": 6.642,
+            "9->12": 75.65,
+            "12->13": 46.023
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:55:33.537",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 21438,
+          "seq": 2055,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e7a00",
+            "1": "0xffff8f3c158e7a00",
+            "2": "0xffff8f3c158e7a00",
+            "5": "0xffff8f3c158e6400",
+            "6": "0xffff8f3c158e6400",
+            "7": "0xffff8f3c158e6b00",
+            "8": "0xffff8f3c158e6b00",
+            "9": "0xffff8f3c158e6b00",
+            "12": "0xffff8f3c158e6900",
+            "13": "0xffff8f3c158e6900"
+          },
+          "total_rtt": 61944.807,
+          "max_stage": "Path1_5->6",
+          "max_latency": 61807.561,
+          "path1_latencies": {
+            "0->1": 18.88,
+            "1->2": 8.267,
+            "2->5": 32.272,
+            "5->6": 61807.561
+          },
+          "path2_latencies": {
+            "7->8": 10.087,
+            "8->9": 10.469,
+            "9->12": 31.714,
+            "12->13": 6.486
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 21438,
+        "seq": 2055,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 75.65,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 61807.561,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 61807.561,
+        "physical_network_delay": 143.0724999999984,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 12.355,
+          "1->2": 6.45,
+          "2->5": 62.425,
+          "5->6": 5.152
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 15.122,
+          "8->9": 6.642,
+          "9->12": 75.65,
+          "12->13": 46.023
+        },
+        "incoming_path1_latencies": {
+          "0->1": 18.88,
+          "1->2": 8.267,
+          "2->5": 32.272,
+          "5->6": 61807.561
+        },
+        "incoming_path2_latencies": {
+          "7->8": 10.087,
+          "8->9": 10.469,
+          "9->12": 31.714,
+          "12->13": 6.486
+        },
+        "outgoing_total_rtt": 62230.952,
+        "incoming_total_rtt": 61944.807,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_22080_327",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 13:55:38.886",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 22080,
+          "seq": 327,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f31252dc500",
+            "1": "0xff182f31252dc500",
+            "2": "0xff182f31252dc500",
+            "5": "0xff182f31252dd900",
+            "6": "0xff182f31252dd900",
+            "7": "0xff182e81641abf00",
+            "8": "0xff182e81641abf00",
+            "9": "0xff182e81641abf00",
+            "12": "0xff182e81641aa700",
+            "13": "0xff182e81641aa700"
+          },
+          "total_rtt": 12552.521,
+          "max_stage": "Path2_9->12",
+          "max_latency": 85.41,
+          "path1_latencies": {
+            "0->1": 13.277,
+            "1->2": 6.297,
+            "2->5": 72.094,
+            "5->6": 5.723
+          },
+          "path2_latencies": {
+            "7->8": 17.49,
+            "8->9": 7.47,
+            "9->12": 85.41,
+            "12->13": 61.507
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 13:55:38.886",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 22080,
+          "seq": 327,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6900",
+            "1": "0xffff8f3c158e6900",
+            "2": "0xffff8f3c158e6900",
+            "5": "0xffff8f3c158e6100",
+            "6": "0xffff8f3c158e6100",
+            "7": "0xffff8f3c158e7400",
+            "8": "0xffff8f3c158e7400",
+            "9": "0xffff8f3c158e7400",
+            "12": "0xffff8f3c158e7d00",
+            "13": "0xffff8f3c158e7d00"
+          },
+          "total_rtt": 12206.473,
+          "max_stage": "Path1_5->6",
+          "max_latency": 12033.251,
+          "path1_latencies": {
+            "0->1": 20.704,
+            "1->2": 10.669,
+            "2->5": 42.065,
+            "5->6": 12033.251
+          },
+          "path2_latencies": {
+            "7->8": 13.166,
+            "8->9": 11.139,
+            "9->12": 41.637,
+            "12->13": 8.65
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 22080,
+        "seq": 327,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path2_9->12",
+        "outgoing_max_latency": 85.41,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 12033.251,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 12033.251,
+        "physical_network_delay": 173.02400000000034,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 13.277,
+          "1->2": 6.297,
+          "2->5": 72.094,
+          "5->6": 5.723
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 17.49,
+          "8->9": 7.47,
+          "9->12": 85.41,
+          "12->13": 61.507
+        },
+        "incoming_path1_latencies": {
+          "0->1": 20.704,
+          "1->2": 10.669,
+          "2->5": 42.065,
+          "5->6": 12033.251
+        },
+        "incoming_path2_latencies": {
+          "7->8": 13.166,
+          "8->9": 11.139,
+          "9->12": 41.637,
+          "12->13": 8.65
+        },
+        "outgoing_total_rtt": 12552.521,
+        "incoming_total_rtt": 12206.473,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_21-102_59697_1119",
+        "pair_name": "intel_21-102",
+        "session_type": "bidirectional",
+        "outgoing": {
+          "timestamp": "2025-05-30 14:10:35.393",
+          "direction": "OUTGOING",
+          "source_file": "21-102-tx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 59697,
+          "seq": 1119,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xff182f46ebf59600",
+            "1": "0xff182f46ebf59600",
+            "2": "0xff182f46ebf59600",
+            "5": "0xff182f46ebf59b00",
+            "6": "0xff182f46ebf59b00",
+            "7": "0xff182e815cfadf00",
+            "8": "0xff182e815cfadf00",
+            "9": "0xff182e815cfadf00",
+            "12": "0xff182e815cfac700",
+            "13": "0xff182e815cfac700"
+          },
+          "total_rtt": 103116.981,
+          "max_stage": "Path1_2->5",
+          "max_latency": 79.942,
+          "path1_latencies": {
+            "0->1": 13.931,
+            "1->2": 7.651,
+            "2->5": 79.942,
+            "5->6": 4.33
+          },
+          "path2_latencies": {
+            "7->8": 15.334,
+            "8->9": 6.678,
+            "9->12": 73.589,
+            "12->13": 55.107
+          },
+          "session_line_src": "10.255.0.21",
+          "session_line_dst": "10.255.0.102",
+          "pair_name": "intel_21-102"
+        },
+        "incoming": {
+          "timestamp": "2025-05-30 14:10:35.392",
+          "direction": "INCOMING",
+          "source_file": "21-102-rx.log",
+          "src_ip": "10.255.0.21",
+          "dst_ip": "10.255.0.102",
+          "session_id": 59697,
+          "seq": 1119,
+          "drop": false,
+          "drop_reason": null,
+          "corrupted_stages": [],
+          "skb_pointers": {
+            "0": "0xffff8f3c158e6500",
+            "1": "0xffff8f3c158e6500",
+            "2": "0xffff8f3c158e6500",
+            "5": "0xffff8f3c158e6800",
+            "6": "0xffff8f3c158e6800",
+            "7": "0xffff8f3c158e6c00",
+            "8": "0xffff8f3c158e6c00",
+            "9": "0xffff8f3c158e6c00",
+            "12": "0xffff8f3c158e6300",
+            "13": "0xffff8f3c158e6300"
+          },
+          "total_rtt": 102806.617,
+          "max_stage": "Path1_5->6",
+          "max_latency": 102661.764,
+          "path1_latencies": {
+            "0->1": 19.359,
+            "1->2": 7.707,
+            "2->5": 29.31,
+            "5->6": 102661.764
+          },
+          "path2_latencies": {
+            "7->8": 10.08,
+            "8->9": 9.96,
+            "9->12": 42.291,
+            "12->13": 6.325
+          },
+          "session_line_src": "10.255.0.102",
+          "session_line_dst": "10.255.0.21",
+          "pair_name": "intel_21-102"
+        },
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 59697,
+        "seq": 1119,
+        "drop": false,
+        "drop_details": [],
+        "outgoing_max_stage": "Path1_2->5",
+        "outgoing_max_latency": 79.942,
+        "incoming_max_stage": "Path1_5->6",
+        "incoming_max_latency": 102661.764,
+        "max_stage": "INCOMING_Path1_5->6",
+        "max_latency": 102661.764,
+        "physical_network_delay": 155.1820000000007,
+        "fping_processing_delay": 50.0,
+        "outgoing_path1_latencies": {
+          "0->1": 13.931,
+          "1->2": 7.651,
+          "2->5": 79.942,
+          "5->6": 4.33
+        },
+        "outgoing_path2_latencies": {
+          "7->8": 15.334,
+          "8->9": 6.678,
+          "9->12": 73.589,
+          "12->13": 55.107
+        },
+        "incoming_path1_latencies": {
+          "0->1": 19.359,
+          "1->2": 7.707,
+          "2->5": 29.31,
+          "5->6": 102661.764
+        },
+        "incoming_path2_latencies": {
+          "7->8": 10.08,
+          "8->9": 9.96,
+          "9->12": 42.291,
+          "12->13": 6.325
+        },
+        "outgoing_total_rtt": 103116.981,
+        "incoming_total_rtt": 102806.617,
+        "is_bidirectional": true,
+        "available_directions": [
+          "OUTGOING",
+          "INCOMING"
+        ]
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_27316_1916",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 27316,
+        "seq": 1916,
+        "timestamp": "2025-05-30 11:55:22.965",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 183.509,
+        "total_rtt": 103530.105,
+        "path1_latencies": {
+          "0->1": 25.224,
+          "1->2": 9.993,
+          "2->5": 31.851,
+          "5->6": 6.687
+        },
+        "path2_latencies": {
+          "7->8": 8.258,
+          "8->9": 4.177,
+          "9->12": 19.798,
+          "12->13": 183.509
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50995_188",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50995,
+        "seq": 188,
+        "timestamp": "2025-05-30 12:05:22.971",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 100.353,
+        "total_rtt": 36735.147,
+        "path1_latencies": {
+          "0->1": 17.18,
+          "1->2": 7.89,
+          "2->5": 23.45,
+          "5->6": 4.497
+        },
+        "path2_latencies": {
+          "7->8": 17.102,
+          "8->9": 8.924,
+          "9->12": 28.579,
+          "12->13": 100.353
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61734_596",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61734,
+        "seq": 596,
+        "timestamp": "2025-05-30 12:10:23.029",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 113.985,
+        "total_rtt": 76403.792,
+        "path1_latencies": {
+          "0->1": 21.111,
+          "1->2": 8.394,
+          "2->5": 24.967,
+          "5->6": 4.75
+        },
+        "path2_latencies": {
+          "7->8": 20.015,
+          "8->9": 8.776,
+          "9->12": 30.221,
+          "12->13": 113.985
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_7202_1028",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 7202,
+        "seq": 1028,
+        "timestamp": "2025-05-30 12:15:23.029",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 146.048,
+        "total_rtt": 44639.898,
+        "path1_latencies": {
+          "0->1": 23.777,
+          "1->2": 8.572,
+          "2->5": 32.218,
+          "5->6": 6.56
+        },
+        "path2_latencies": {
+          "7->8": 20.956,
+          "8->9": 9.831,
+          "9->12": 33.8,
+          "12->13": 146.048
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_7672_1388",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 7672,
+        "seq": 1388,
+        "timestamp": "2025-05-30 12:15:39.244",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 44.47,
+        "total_rtt": 49186.876,
+        "path1_latencies": {
+          "0->1": 21.445,
+          "1->2": 14.816,
+          "2->5": 38.823,
+          "5->6": 7.151
+        },
+        "path2_latencies": {
+          "7->8": 10.138,
+          "8->9": 4.982,
+          "9->12": 22.344,
+          "12->13": 44.47
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_17960_1364",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 17960,
+        "seq": 1364,
+        "timestamp": "2025-05-30 12:20:23.100",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 384.628,
+        "total_rtt": 160055.139,
+        "path1_latencies": {
+          "0->1": 24.098,
+          "1->2": 9.307,
+          "2->5": 32.598,
+          "5->6": 6.986
+        },
+        "path2_latencies": {
+          "7->8": 16.108,
+          "8->9": 6.935,
+          "9->12": 23.578,
+          "12->13": 384.628
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_17960_1388",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 17960,
+        "seq": 1388,
+        "timestamp": "2025-05-30 12:20:23.106",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 216.125,
+        "total_rtt": 40130.066,
+        "path1_latencies": {
+          "0->1": 22.441,
+          "1->2": 9.573,
+          "2->5": 33.013,
+          "5->6": 6.528
+        },
+        "path2_latencies": {
+          "7->8": 4.965,
+          "8->9": 3.673,
+          "9->12": 19.395,
+          "12->13": 216.125
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_5357_524",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 5357,
+        "seq": 524,
+        "timestamp": "2025-05-30 12:25:17.048",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 109165.862,
+        "total_rtt": 109530.299,
+        "path1_latencies": {
+          "0->1": 18.687,
+          "1->2": 7.303,
+          "2->5": 27.636,
+          "5->6": 10.199
+        },
+        "path2_latencies": {
+          "7->8": 15.12,
+          "8->9": 8.232,
+          "9->12": 28.673,
+          "12->13": 109165.862
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_5357_1748",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 5357,
+        "seq": 1748,
+        "timestamp": "2025-05-30 12:25:23.164",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 106.646,
+        "total_rtt": 66641.635,
+        "path1_latencies": {
+          "0->1": 17.018,
+          "1->2": 7.497,
+          "2->5": 26.903,
+          "5->6": 4.553
+        },
+        "path2_latencies": {
+          "7->8": 16.804,
+          "8->9": 8.154,
+          "9->12": 31.075,
+          "12->13": 106.646
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_18014_2060",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 18014,
+        "seq": 2060,
+        "timestamp": "2025-05-30 12:30:23.289",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 165.839,
+        "total_rtt": 108565.969,
+        "path1_latencies": {
+          "0->1": 17.687,
+          "1->2": 6.818,
+          "2->5": 30.419,
+          "5->6": 4.993
+        },
+        "path2_latencies": {
+          "7->8": 18.204,
+          "8->9": 8.891,
+          "9->12": 46.148,
+          "12->13": 165.839
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_39730_92",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 39730,
+        "seq": 92,
+        "timestamp": "2025-05-30 12:40:23.291",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 210.87,
+        "total_rtt": 123761.486,
+        "path1_latencies": {
+          "0->1": 17.58,
+          "1->2": 6.747,
+          "2->5": 21.954,
+          "5->6": 4.777
+        },
+        "path2_latencies": {
+          "7->8": 16.631,
+          "8->9": 7.859,
+          "9->12": 37.828,
+          "12->13": 210.87
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50417_332",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50417,
+        "seq": 332,
+        "timestamp": "2025-05-30 12:45:23.360",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 286.555,
+        "total_rtt": 104222.843,
+        "path1_latencies": {
+          "0->1": 23.471,
+          "1->2": 8.739,
+          "2->5": 36.838,
+          "5->6": 6.668
+        },
+        "path2_latencies": {
+          "7->8": 7.777,
+          "8->9": 3.833,
+          "9->12": 19.251,
+          "12->13": 286.555
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50845_44",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50845,
+        "seq": 44,
+        "timestamp": "2025-05-30 12:45:34.798",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 67570.245,
+        "total_rtt": 67947.279,
+        "path1_latencies": {
+          "0->1": 17.009,
+          "1->2": 6.647,
+          "2->5": 24.16,
+          "5->6": 4.726
+        },
+        "path2_latencies": {
+          "7->8": 17.18,
+          "8->9": 8.554,
+          "9->12": 30.758,
+          "12->13": 67570.245
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50845_164",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50845,
+        "seq": 164,
+        "timestamp": "2025-05-30 12:45:35.386",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 45177.259,
+        "total_rtt": 45597.538,
+        "path1_latencies": {
+          "0->1": 22.519,
+          "1->2": 8.804,
+          "2->5": 37.768,
+          "5->6": 7.516
+        },
+        "path2_latencies": {
+          "7->8": 16.413,
+          "8->9": 8.536,
+          "9->12": 31.091,
+          "12->13": 45177.259
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_60770_2180",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 60770,
+        "seq": 2180,
+        "timestamp": "2025-05-30 12:50:16.707",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 19804.235,
+        "total_rtt": 20235.593,
+        "path1_latencies": {
+          "0->1": 20.226,
+          "1->2": 8.43,
+          "2->5": 32.287,
+          "5->6": 6.906
+        },
+        "path2_latencies": {
+          "7->8": 11.412,
+          "8->9": 6.076,
+          "9->12": 26.212,
+          "12->13": 19804.235
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61363_716",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61363,
+        "seq": 716,
+        "timestamp": "2025-05-30 12:50:23.674",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 121838.087,
+        "total_rtt": 263822.03,
+        "path1_latencies": {
+          "0->1": 25.416,
+          "1->2": 9.04,
+          "2->5": 34.622,
+          "5->6": 6.465
+        },
+        "path2_latencies": {
+          "7->8": 16.529,
+          "8->9": 7.955,
+          "9->12": 24.892,
+          "12->13": 121838.087
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61363_740",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61363,
+        "seq": 740,
+        "timestamp": "2025-05-30 12:50:23.680",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 121842.24,
+        "total_rtt": 144066.089,
+        "path1_latencies": {
+          "0->1": 19.164,
+          "1->2": 7.266,
+          "2->5": 27.04,
+          "5->6": 4.792
+        },
+        "path2_latencies": {
+          "7->8": 5.903,
+          "8->9": 3.889,
+          "9->12": 21.022,
+          "12->13": 121842.24
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61363_764",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61363,
+        "seq": 764,
+        "timestamp": "2025-05-30 12:50:23.696",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 181.31,
+        "total_rtt": 24680.431,
+        "path1_latencies": {
+          "0->1": 25.483,
+          "1->2": 9.106,
+          "2->5": 34.339,
+          "5->6": 6.328
+        },
+        "path2_latencies": {
+          "7->8": 7.284,
+          "8->9": 3.8,
+          "9->12": 21.803,
+          "12->13": 181.31
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61878_404",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61878,
+        "seq": 404,
+        "timestamp": "2025-05-30 12:50:34.800",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 168.786,
+        "total_rtt": 42550.565,
+        "path1_latencies": {
+          "0->1": 22.928,
+          "1->2": 11.283,
+          "2->5": 32.438,
+          "5->6": 6.083
+        },
+        "path2_latencies": {
+          "7->8": 15.676,
+          "8->9": 7.449,
+          "9->12": 24.575,
+          "12->13": 168.786
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_6092_1340",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 6092,
+        "seq": 1340,
+        "timestamp": "2025-05-30 12:55:11.530",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 84495.243,
+        "total_rtt": 84891.529,
+        "path1_latencies": {
+          "0->1": 18.839,
+          "1->2": 7.423,
+          "2->5": 25.456,
+          "5->6": 4.659
+        },
+        "path2_latencies": {
+          "7->8": 18.016,
+          "8->9": 8.326,
+          "9->12": 33.527,
+          "12->13": 84495.243
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_19051_1316",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 19051,
+        "seq": 1316,
+        "timestamp": "2025-05-30 13:00:23.741",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 185.3,
+        "total_rtt": 96525.86,
+        "path1_latencies": {
+          "0->1": 22.369,
+          "1->2": 9.379,
+          "2->5": 30.52,
+          "5->6": 6.945
+        },
+        "path2_latencies": {
+          "7->8": 7.462,
+          "8->9": 3.931,
+          "9->12": 19.956,
+          "12->13": 185.3
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_6388_1772",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 6388,
+        "seq": 1772,
+        "timestamp": "2025-05-30 13:05:23.866",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 141.477,
+        "total_rtt": 34823.286,
+        "path1_latencies": {
+          "0->1": 22.594,
+          "1->2": 8.516,
+          "2->5": 32.444,
+          "5->6": 6.066
+        },
+        "path2_latencies": {
+          "7->8": 7.732,
+          "8->9": 3.928,
+          "9->12": 19.737,
+          "12->13": 141.477
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_16999_2132",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 16999,
+        "seq": 2132,
+        "timestamp": "2025-05-30 13:10:23.866",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 150.788,
+        "total_rtt": 16403.781,
+        "path1_latencies": {
+          "0->1": 28.268,
+          "1->2": 10.269,
+          "2->5": 35.311,
+          "5->6": 6.798
+        },
+        "path2_latencies": {
+          "7->8": 21.763,
+          "8->9": 10.454,
+          "9->12": 38.602,
+          "12->13": 150.788
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_27850_1100",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 27850,
+        "seq": 1100,
+        "timestamp": "2025-05-30 13:15:16.971",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 20875.631,
+        "total_rtt": 21330.095,
+        "path1_latencies": {
+          "0->1": 22.076,
+          "1->2": 9.418,
+          "2->5": 31.195,
+          "5->6": 7.062
+        },
+        "path2_latencies": {
+          "7->8": 16.965,
+          "8->9": 8.364,
+          "9->12": 31.516,
+          "12->13": 20875.631
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_28820_932",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 28820,
+        "seq": 932,
+        "timestamp": "2025-05-30 13:15:43.175",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 50.776,
+        "total_rtt": 62740.646,
+        "path1_latencies": {
+          "0->1": 22.523,
+          "1->2": 7.772,
+          "2->5": 27.285,
+          "5->6": 4.849
+        },
+        "path2_latencies": {
+          "7->8": 11.42,
+          "8->9": 6.429,
+          "9->12": 31.428,
+          "12->13": 50.776
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_38672_332",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 38672,
+        "seq": 332,
+        "timestamp": "2025-05-30 13:20:23.940",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 310.544,
+        "total_rtt": 130751.748,
+        "path1_latencies": {
+          "0->1": 22.818,
+          "1->2": 8.147,
+          "2->5": 32.498,
+          "5->6": 6.626
+        },
+        "path2_latencies": {
+          "7->8": 8.134,
+          "8->9": 4.08,
+          "9->12": 19.856,
+          "12->13": 310.544
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_38672_356",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 38672,
+        "seq": 356,
+        "timestamp": "2025-05-30 13:20:23.946",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 243.984,
+        "total_rtt": 10740.447,
+        "path1_latencies": {
+          "0->1": 22.895,
+          "1->2": 8.43,
+          "2->5": 32.779,
+          "5->6": 6.723
+        },
+        "path2_latencies": {
+          "7->8": 5.228,
+          "8->9": 3.481,
+          "9->12": 19.167,
+          "12->13": 243.984
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_48981_1796",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 48981,
+        "seq": 1796,
+        "timestamp": "2025-05-30 13:25:17.172",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 53831.506,
+        "total_rtt": 54180.404,
+        "path1_latencies": {
+          "0->1": 17.851,
+          "1->2": 7.096,
+          "2->5": 24.773,
+          "5->6": 4.56
+        },
+        "path2_latencies": {
+          "7->8": 16.562,
+          "8->9": 8.22,
+          "9->12": 30.09,
+          "12->13": 53831.506
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_49401_524",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 49401,
+        "seq": 524,
+        "timestamp": "2025-05-30 13:25:24.133",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 108.497,
+        "total_rtt": 157488.906,
+        "path1_latencies": {
+          "0->1": 22.623,
+          "1->2": 8.781,
+          "2->5": 43.134,
+          "5->6": 6.353
+        },
+        "path2_latencies": {
+          "7->8": 18.315,
+          "8->9": 9.512,
+          "9->12": 33.693,
+          "12->13": 108.497
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_49401_548",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 49401,
+        "seq": 548,
+        "timestamp": "2025-05-30 13:25:24.136",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 65.252,
+        "total_rtt": 37454.645,
+        "path1_latencies": {
+          "0->1": 18.622,
+          "1->2": 7.534,
+          "2->5": 27.258,
+          "5->6": 4.792
+        },
+        "path2_latencies": {
+          "7->8": 4.769,
+          "8->9": 3.569,
+          "9->12": 20.149,
+          "12->13": 65.252
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_49401_1364",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 49401,
+        "seq": 1364,
+        "timestamp": "2025-05-30 13:25:28.325",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 120544.132,
+        "total_rtt": 120938.923,
+        "path1_latencies": {
+          "0->1": 19.896,
+          "1->2": 7.017,
+          "2->5": 26.147,
+          "5->6": 4.483
+        },
+        "path2_latencies": {
+          "7->8": 18.801,
+          "8->9": 10.255,
+          "9->12": 33.369,
+          "12->13": 120544.132
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_61830_884",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 61830,
+        "seq": 884,
+        "timestamp": "2025-05-30 13:30:24.203",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 53.361,
+        "total_rtt": 56348.313,
+        "path1_latencies": {
+          "0->1": 21.433,
+          "1->2": 8.7,
+          "2->5": 34.658,
+          "5->6": 5.009
+        },
+        "path2_latencies": {
+          "7->8": 16.974,
+          "8->9": 8.713,
+          "9->12": 37.131,
+          "12->13": 53.361
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_6106_2348",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 6106,
+        "seq": 2348,
+        "timestamp": "2025-05-30 13:35:16.099",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 207.979,
+        "total_rtt": 21150.892,
+        "path1_latencies": {
+          "0->1": 26.034,
+          "1->2": 10.534,
+          "2->5": 34.99,
+          "5->6": 6.54
+        },
+        "path2_latencies": {
+          "7->8": 9.051,
+          "8->9": 4.753,
+          "9->12": 20.154,
+          "12->13": 207.979
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_6614_1340",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 6614,
+        "seq": 1340,
+        "timestamp": "2025-05-30 13:35:24.266",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 110.064,
+        "total_rtt": 78511.908,
+        "path1_latencies": {
+          "0->1": 21.178,
+          "1->2": 9.333,
+          "2->5": 31.016,
+          "5->6": 6.215
+        },
+        "path2_latencies": {
+          "7->8": 16.932,
+          "8->9": 8.152,
+          "9->12": 28.168,
+          "12->13": 110.064
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_17225_1796",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 17225,
+        "seq": 1796,
+        "timestamp": "2025-05-30 13:40:24.332",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 155.569,
+        "total_rtt": 144265.863,
+        "path1_latencies": {
+          "0->1": 17.913,
+          "1->2": 7.794,
+          "2->5": 24.356,
+          "5->6": 4.333
+        },
+        "path2_latencies": {
+          "7->8": 16.549,
+          "8->9": 8.003,
+          "9->12": 30.31,
+          "12->13": 155.569
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_17225_1820",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 17225,
+        "seq": 1820,
+        "timestamp": "2025-05-30 13:40:24.337",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 145.244,
+        "total_rtt": 23384.787,
+        "path1_latencies": {
+          "0->1": 24.426,
+          "1->2": 9.728,
+          "2->5": 34.37,
+          "5->6": 6.846
+        },
+        "path2_latencies": {
+          "7->8": 4.491,
+          "8->9": 3.252,
+          "9->12": 19.592,
+          "12->13": 145.244
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_3846_500",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 3846,
+        "seq": 500,
+        "timestamp": "2025-05-30 13:45:16.183",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 111902.532,
+        "total_rtt": 112349.592,
+        "path1_latencies": {
+          "0->1": 28.041,
+          "1->2": 9.892,
+          "2->5": 35.169,
+          "5->6": 6.578
+        },
+        "path2_latencies": {
+          "7->8": 15.14,
+          "8->9": 7.86,
+          "9->12": 30.271,
+          "12->13": 111902.532
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_3846_2156",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 3846,
+        "seq": 2156,
+        "timestamp": "2025-05-30 13:45:24.456",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 153.458,
+        "total_rtt": 34222.473,
+        "path1_latencies": {
+          "0->1": 17.893,
+          "1->2": 7.382,
+          "2->5": 29.379,
+          "5->6": 4.705
+        },
+        "path2_latencies": {
+          "7->8": 7.54,
+          "8->9": 3.971,
+          "9->12": 20.069,
+          "12->13": 153.458
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_26479_44",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 26479,
+        "seq": 44,
+        "timestamp": "2025-05-30 13:55:24.459",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 115.563,
+        "total_rtt": 53053.163,
+        "path1_latencies": {
+          "0->1": 25.333,
+          "1->2": 8.12,
+          "2->5": 47.358,
+          "5->6": 7.185
+        },
+        "path2_latencies": {
+          "7->8": 18.463,
+          "8->9": 8.595,
+          "9->12": 32.685,
+          "12->13": 115.563
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_26479_1844",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 26479,
+        "seq": 1844,
+        "timestamp": "2025-05-30 13:55:33.540",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 41.409,
+        "total_rtt": 29769.399,
+        "path1_latencies": {
+          "0->1": 23.507,
+          "1->2": 9.086,
+          "2->5": 35.389,
+          "5->6": 6.715
+        },
+        "path2_latencies": {
+          "7->8": 10.396,
+          "8->9": 5.144,
+          "9->12": 23.667,
+          "12->13": 41.409
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50284_1988",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50284,
+        "seq": 1988,
+        "timestamp": "2025-05-30 14:05:16.696",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 35793.706,
+        "total_rtt": 36167.287,
+        "path1_latencies": {
+          "0->1": 28.907,
+          "1->2": 10.268,
+          "2->5": 35.538,
+          "5->6": 6.499
+        },
+        "path2_latencies": {
+          "7->8": 15.668,
+          "8->9": 7.955,
+          "9->12": 29.211,
+          "12->13": 35793.706
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50745_668",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50745,
+        "seq": 668,
+        "timestamp": "2025-05-30 14:05:24.403",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 1222.726,
+        "total_rtt": 60271.709,
+        "path1_latencies": {
+          "0->1": 17.316,
+          "1->2": 7.545,
+          "2->5": 24.025,
+          "5->6": 5.019
+        },
+        "path2_latencies": {
+          "7->8": 21.681,
+          "8->9": 10.508,
+          "9->12": 38.49,
+          "12->13": 1222.726
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_50745_1652",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 50745,
+        "seq": 1652,
+        "timestamp": "2025-05-30 14:05:29.355",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 72733.632,
+        "total_rtt": 73204.226,
+        "path1_latencies": {
+          "0->1": 24.958,
+          "1->2": 8.966,
+          "2->5": 32.962,
+          "5->6": 7.05
+        },
+        "path2_latencies": {
+          "7->8": 18.28,
+          "8->9": 8.38,
+          "9->12": 25.533,
+          "12->13": 72733.632
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_62027_620",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 62027,
+        "seq": 620,
+        "timestamp": "2025-05-30 14:10:35.396",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 88.402,
+        "total_rtt": 77784.256,
+        "path1_latencies": {
+          "0->1": 23.351,
+          "1->2": 9.0,
+          "2->5": 32.291,
+          "5->6": 6.776
+        },
+        "path2_latencies": {
+          "7->8": 9.953,
+          "8->9": 5.149,
+          "9->12": 22.961,
+          "12->13": 88.402
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_6995_1268",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 6995,
+        "seq": 1268,
+        "timestamp": "2025-05-30 14:15:24.534",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 149.781,
+        "total_rtt": 58068.361,
+        "path1_latencies": {
+          "0->1": 23.804,
+          "1->2": 8.519,
+          "2->5": 29.738,
+          "5->6": 6.005
+        },
+        "path2_latencies": {
+          "7->8": 20.345,
+          "8->9": 11.049,
+          "9->12": 40.236,
+          "12->13": 149.781
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_102-21_OUTGOING_17963_1724",
+        "pair_name": "intel_102-21",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.102->10.255.0.21",
+        "session_id": 17963,
+        "seq": 1724,
+        "timestamp": "2025-05-30 14:20:24.592",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_12->13",
+        "max_latency": 44.885,
+        "total_rtt": 56572.289,
+        "path1_latencies": {
+          "0->1": 17.189,
+          "1->2": 7.341,
+          "2->5": 23.64,
+          "5->6": 4.937
+        },
+        "path2_latencies": {
+          "7->8": 17.256,
+          "8->9": 8.176,
+          "9->12": 31.084,
+          "12->13": 44.885
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_24495_1695",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 24495,
+        "seq": 1695,
+        "timestamp": "2025-05-30 11:50:22.774",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 82.901,
+        "total_rtt": 125730.83,
+        "path1_latencies": {
+          "0->1": 14.877,
+          "1->2": 6.894,
+          "2->5": 75.512,
+          "5->6": 4.482
+        },
+        "path2_latencies": {
+          "7->8": 17.124,
+          "8->9": 6.77,
+          "9->12": 82.901,
+          "12->13": 51.881
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_6070_2103",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 6070,
+        "seq": 2103,
+        "timestamp": "2025-05-30 11:55:22.965",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 76.074,
+        "total_rtt": 183908.313,
+        "path1_latencies": {
+          "0->1": 13.458,
+          "1->2": 6.79,
+          "2->5": 65.382,
+          "5->6": 4.341
+        },
+        "path2_latencies": {
+          "7->8": 17.433,
+          "8->9": 6.618,
+          "9->12": 76.074,
+          "12->13": 54.241
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_6070_2127",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 6070,
+        "seq": 2127,
+        "timestamp": "2025-05-30 11:55:22.968",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 59.84,
+        "total_rtt": 63971.788,
+        "path1_latencies": {
+          "0->1": 13.805,
+          "1->2": 6.074,
+          "2->5": 59.84,
+          "5->6": 3.674
+        },
+        "path2_latencies": {
+          "7->8": 3.949,
+          "8->9": 3.343,
+          "9->12": 55.71,
+          "12->13": 34.12
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_18806_279",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 18806,
+        "seq": 279,
+        "timestamp": "2025-05-30 12:00:23.029",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 76.467,
+        "total_rtt": 95091.69,
+        "path1_latencies": {
+          "0->1": 13.015,
+          "1->2": 6.577,
+          "2->5": 76.467,
+          "5->6": 4.224
+        },
+        "path2_latencies": {
+          "7->8": 7.557,
+          "8->9": 4.57,
+          "9->12": 60.826,
+          "12->13": 41.6
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_43109_1383",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 43109,
+        "seq": 1383,
+        "timestamp": "2025-05-30 12:10:23.029",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 53.419,
+        "total_rtt": 38738.401,
+        "path1_latencies": {
+          "0->1": 11.242,
+          "1->2": 5.889,
+          "2->5": 53.419,
+          "5->6": 4.296
+        },
+        "path2_latencies": {
+          "7->8": 15.017,
+          "8->9": 6.459,
+          "9->12": 52.219,
+          "12->13": 38.486
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_2100_2247",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 2100,
+        "seq": 2247,
+        "timestamp": "2025-05-30 12:20:23.099",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 76.589,
+        "total_rtt": 114904.206,
+        "path1_latencies": {
+          "0->1": 15.475,
+          "1->2": 7.378,
+          "2->5": 76.589,
+          "5->6": 4.437
+        },
+        "path2_latencies": {
+          "7->8": 14.894,
+          "8->9": 6.133,
+          "9->12": 54.479,
+          "12->13": 41.258
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_29606_207",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 29606,
+        "seq": 207,
+        "timestamp": "2025-05-30 12:30:23.289",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 87.534,
+        "total_rtt": 84793.088,
+        "path1_latencies": {
+          "0->1": 12.346,
+          "1->2": 5.707,
+          "2->5": 54.826,
+          "5->6": 4.206
+        },
+        "path2_latencies": {
+          "7->8": 17.075,
+          "8->9": 7.719,
+          "9->12": 87.534,
+          "12->13": 63.774
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_11551_567",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 11551,
+        "seq": 567,
+        "timestamp": "2025-05-30 12:35:23.231",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 76.695,
+        "total_rtt": 29142.178,
+        "path1_latencies": {
+          "0->1": 12.614,
+          "1->2": 6.37,
+          "2->5": 74.308,
+          "5->6": 4.604
+        },
+        "path2_latencies": {
+          "7->8": 16.877,
+          "8->9": 7.538,
+          "9->12": 76.695,
+          "12->13": 52.912
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_23705_1095",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 23705,
+        "seq": 1095,
+        "timestamp": "2025-05-30 12:40:23.291",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 73.927,
+        "total_rtt": 12603.495,
+        "path1_latencies": {
+          "0->1": 14.822,
+          "1->2": 6.771,
+          "2->5": 73.927,
+          "5->6": 4.047
+        },
+        "path2_latencies": {
+          "7->8": 5.316,
+          "8->9": 2.4,
+          "9->12": 64.972,
+          "12->13": 34.092
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_36280_1503",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 36280,
+        "seq": 1503,
+        "timestamp": "2025-05-30 12:45:23.362",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 78.393,
+        "total_rtt": 131450.773,
+        "path1_latencies": {
+          "0->1": 14.932,
+          "1->2": 7.075,
+          "2->5": 78.393,
+          "5->6": 4.788
+        },
+        "path2_latencies": {
+          "7->8": 15.761,
+          "8->9": 7.321,
+          "9->12": 76.944,
+          "12->13": 47.342
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_36280_1527",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 36280,
+        "seq": 1527,
+        "timestamp": "2025-05-30 12:45:23.364",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 69.076,
+        "total_rtt": 11386.432,
+        "path1_latencies": {
+          "0->1": 13.734,
+          "1->2": 7.526,
+          "2->5": 69.076,
+          "5->6": 4.13
+        },
+        "path2_latencies": {
+          "7->8": 3.288,
+          "8->9": 3.094,
+          "9->12": 51.324,
+          "12->13": 27.692
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_36787_1191",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 36787,
+        "seq": 1191,
+        "timestamp": "2025-05-30 12:45:34.798",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 69.021,
+        "total_rtt": 30361.731,
+        "path1_latencies": {
+          "0->1": 15.796,
+          "1->2": 7.196,
+          "2->5": 69.021,
+          "5->6": 4.762
+        },
+        "path2_latencies": {
+          "7->8": 15.754,
+          "8->9": 6.151,
+          "9->12": 63.017,
+          "12->13": 46.048
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_36787_1311",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 36787,
+        "seq": 1311,
+        "timestamp": "2025-05-30 12:45:35.386",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 87.935,
+        "total_rtt": 17147.475,
+        "path1_latencies": {
+          "0->1": 17.604,
+          "1->2": 6.34,
+          "2->5": 61.973,
+          "5->6": 4.218
+        },
+        "path2_latencies": {
+          "7->8": 19.395,
+          "8->9": 8.256,
+          "9->12": 87.935,
+          "12->13": 65.164
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_48299_2007",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 48299,
+        "seq": 2007,
+        "timestamp": "2025-05-30 12:50:23.677",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 74.575,
+        "total_rtt": 117012.03,
+        "path1_latencies": {
+          "0->1": 14.886,
+          "1->2": 6.879,
+          "2->5": 74.575,
+          "5->6": 4.035
+        },
+        "path2_latencies": {
+          "7->8": 14.34,
+          "8->9": 5.659,
+          "9->12": 58.517,
+          "12->13": 37.903
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_49076_1503",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 49076,
+        "seq": 1503,
+        "timestamp": "2025-05-30 12:50:34.800",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 86.554,
+        "total_rtt": 16243.767,
+        "path1_latencies": {
+          "0->1": 17.017,
+          "1->2": 7.963,
+          "2->5": 79.982,
+          "5->6": 4.647
+        },
+        "path2_latencies": {
+          "7->8": 17.065,
+          "8->9": 7.679,
+          "9->12": 86.554,
+          "12->13": 49.874
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_13600_183",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 13600,
+        "seq": 183,
+        "timestamp": "2025-05-30 13:00:23.741",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 84.975,
+        "total_rtt": 125897.87,
+        "path1_latencies": {
+          "0->1": 15.414,
+          "1->2": 7.245,
+          "2->5": 79.015,
+          "5->6": 4.39
+        },
+        "path2_latencies": {
+          "7->8": 14.892,
+          "8->9": 6.26,
+          "9->12": 84.975,
+          "12->13": 57.488
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_25637_687",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 25637,
+        "seq": 687,
+        "timestamp": "2025-05-30 13:05:23.866",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 74.08,
+        "total_rtt": 117938.367,
+        "path1_latencies": {
+          "0->1": 11.154,
+          "1->2": 6.442,
+          "2->5": 54.101,
+          "5->6": 4.421
+        },
+        "path2_latencies": {
+          "7->8": 15.317,
+          "8->9": 5.978,
+          "9->12": 74.08,
+          "12->13": 44.011
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_5138_1167",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 5138,
+        "seq": 1167,
+        "timestamp": "2025-05-30 13:10:23.867",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 81.079,
+        "total_rtt": 14853.831,
+        "path1_latencies": {
+          "0->1": 12.451,
+          "1->2": 6.285,
+          "2->5": 68.652,
+          "5->6": 5.466
+        },
+        "path2_latencies": {
+          "7->8": 15.504,
+          "8->9": 6.743,
+          "9->12": 81.079,
+          "12->13": 47.24
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_17370_1623",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 17370,
+        "seq": 1623,
+        "timestamp": "2025-05-30 13:15:23.868",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 85.499,
+        "total_rtt": 68661.562,
+        "path1_latencies": {
+          "0->1": 16.41,
+          "1->2": 6.505,
+          "2->5": 79.329,
+          "5->6": 4.398
+        },
+        "path2_latencies": {
+          "7->8": 16.553,
+          "8->9": 6.922,
+          "9->12": 85.499,
+          "12->13": 62.012
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_29522_2055",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 29522,
+        "seq": 2055,
+        "timestamp": "2025-05-30 13:20:23.941",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 76.02,
+        "total_rtt": 147346.768,
+        "path1_latencies": {
+          "0->1": 20.923,
+          "1->2": 6.705,
+          "2->5": 72.999,
+          "5->6": 4.177
+        },
+        "path2_latencies": {
+          "7->8": 15.304,
+          "8->9": 6.447,
+          "9->12": 76.02,
+          "12->13": 47.217
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_29522_2079",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 29522,
+        "seq": 2079,
+        "timestamp": "2025-05-30 13:20:23.943",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 75.86,
+        "total_rtt": 27410.162,
+        "path1_latencies": {
+          "0->1": 15.194,
+          "1->2": 6.702,
+          "2->5": 75.86,
+          "5->6": 4.454
+        },
+        "path2_latencies": {
+          "7->8": 2.967,
+          "8->9": 2.33,
+          "9->12": 50.3,
+          "12->13": 28.604
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_43308_1143",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 43308,
+        "seq": 1143,
+        "timestamp": "2025-05-30 13:25:17.172",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 82.932,
+        "total_rtt": 14672.183,
+        "path1_latencies": {
+          "0->1": 17.154,
+          "1->2": 7.45,
+          "2->5": 82.932,
+          "5->6": 5.614
+        },
+        "path2_latencies": {
+          "7->8": 15.854,
+          "8->9": 7.098,
+          "9->12": 74.821,
+          "12->13": 48.651
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_43865_543",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 43865,
+        "seq": 543,
+        "timestamp": "2025-05-30 13:25:28.326",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 58.802,
+        "total_rtt": 86482.622,
+        "path1_latencies": {
+          "0->1": 16.061,
+          "1->2": 6.508,
+          "2->5": 58.802,
+          "5->6": 4.145
+        },
+        "path2_latencies": {
+          "7->8": 6.905,
+          "8->9": 3.979,
+          "9->12": 52.418,
+          "12->13": 35.868
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_2954_735",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 2954,
+        "seq": 735,
+        "timestamp": "2025-05-30 13:35:24.266",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 86.769,
+        "total_rtt": 68411.899,
+        "path1_latencies": {
+          "0->1": 15.915,
+          "1->2": 6.856,
+          "2->5": 65.36,
+          "5->6": 5.433
+        },
+        "path2_latencies": {
+          "7->8": 17.212,
+          "8->9": 7.981,
+          "9->12": 86.769,
+          "12->13": 55.187
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_14633_1287",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 14633,
+        "seq": 1287,
+        "timestamp": "2025-05-30 13:40:24.332",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 82.381,
+        "total_rtt": 114494.139,
+        "path1_latencies": {
+          "0->1": 14.187,
+          "1->2": 7.251,
+          "2->5": 72.677,
+          "5->6": 4.342
+        },
+        "path2_latencies": {
+          "7->8": 17.78,
+          "8->9": 6.837,
+          "9->12": 82.381,
+          "12->13": 57.961
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_26475_207",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 26475,
+        "seq": 207,
+        "timestamp": "2025-05-30 13:45:16.183",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 94.612,
+        "total_rtt": 44293.781,
+        "path1_latencies": {
+          "0->1": 17.983,
+          "1->2": 8.434,
+          "2->5": 91.35,
+          "5->6": 5.674
+        },
+        "path2_latencies": {
+          "7->8": 8.461,
+          "8->9": 4.048,
+          "9->12": 94.612,
+          "12->13": 60.334
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_26475_1839",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 26475,
+        "seq": 1839,
+        "timestamp": "2025-05-30 13:45:24.456",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 91.958,
+        "total_rtt": 107216.153,
+        "path1_latencies": {
+          "0->1": 18.408,
+          "1->2": 8.548,
+          "2->5": 91.958,
+          "5->6": 6.332
+        },
+        "path2_latencies": {
+          "7->8": 6.264,
+          "8->9": 2.366,
+          "9->12": 64.143,
+          "12->13": 37.362
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_6345_2295",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 6345,
+        "seq": 2295,
+        "timestamp": "2025-05-30 13:50:24.458",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 83.493,
+        "total_rtt": 19649.331,
+        "path1_latencies": {
+          "0->1": 16.342,
+          "1->2": 8.416,
+          "2->5": 83.493,
+          "5->6": 5.379
+        },
+        "path2_latencies": {
+          "7->8": 16.309,
+          "8->9": 6.47,
+          "9->12": 76.929,
+          "12->13": 45.922
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_21438_255",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 21438,
+        "seq": 255,
+        "timestamp": "2025-05-30 13:55:24.459",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 76.311,
+        "total_rtt": 32093.068,
+        "path1_latencies": {
+          "0->1": 14.058,
+          "1->2": 7.435,
+          "2->5": 76.311,
+          "5->6": 4.434
+        },
+        "path2_latencies": {
+          "7->8": 7.412,
+          "8->9": 3.092,
+          "9->12": 75.988,
+          "12->13": 41.693
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_33943_759",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 33943,
+        "seq": 759,
+        "timestamp": "2025-05-30 14:00:24.459",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_2->5",
+        "max_latency": 76.61,
+        "total_rtt": 25372.637,
+        "path1_latencies": {
+          "0->1": 15.547,
+          "1->2": 6.808,
+          "2->5": 76.61,
+          "5->6": 4.508
+        },
+        "path2_latencies": {
+          "7->8": 12.073,
+          "8->9": 61.423,
+          "9->12": 53.733,
+          "12->13": 38.316
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_45944_2271",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 45944,
+        "seq": 2271,
+        "timestamp": "2025-05-30 14:05:16.696",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 81.523,
+        "total_rtt": 14835.319,
+        "path1_latencies": {
+          "0->1": 12.891,
+          "1->2": 6.673,
+          "2->5": 61.757,
+          "5->6": 4.131
+        },
+        "path2_latencies": {
+          "7->8": 7.341,
+          "8->9": 3.876,
+          "9->12": 81.523,
+          "12->13": 45.715
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_46427_2103",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 46427,
+        "seq": 2103,
+        "timestamp": "2025-05-30 14:05:29.355",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 96.406,
+        "total_rtt": 20489.236,
+        "path1_latencies": {
+          "0->1": 21.213,
+          "1->2": 8.048,
+          "2->5": 87.358,
+          "5->6": 5.753
+        },
+        "path2_latencies": {
+          "7->8": 18.45,
+          "8->9": 8.946,
+          "9->12": 96.406,
+          "12->13": 60.739
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_OUTGOING_1190_159",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "OUTGOING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 1190,
+        "seq": 159,
+        "timestamp": "2025-05-30 14:25:24.660",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path2_9->12",
+        "max_latency": 75.042,
+        "total_rtt": 85266.592,
+        "path1_latencies": {
+          "0->1": 11.545,
+          "1->2": 6.482,
+          "2->5": 58.546,
+          "5->6": 7.604
+        },
+        "path2_latencies": {
+          "7->8": 17.188,
+          "8->9": 6.53,
+          "9->12": 75.042,
+          "12->13": 51.678
+        },
+        "is_bidirectional": false,
+        "available_direction": "OUTGOING"
+      },
+      {
+        "session_key": "intel_21-102_INCOMING_499_1551",
+        "pair_name": "intel_21-102",
+        "session_type": "unidirectional",
+        "direction_type": "INCOMING",
+        "direction": "10.255.0.21->10.255.0.102",
+        "session_id": 499,
+        "seq": 1551,
+        "timestamp": "2025-05-30 14:25:17.966",
+        "drop": false,
+        "drop_details": [],
+        "max_stage": "Path1_5->6",
+        "max_latency": 4205.351,
+        "total_rtt": 4320.504,
+        "path1_latencies": {
+          "0->1": 15.923,
+          "1->2": 7.579,
+          "2->5": 26.029,
+          "5->6": 4205.351
+        },
+        "path2_latencies": {
+          "7->8": 8.977,
+          "8->9": 6.716,
+          "9->12": 31.594,
+          "12->13": 5.255
+        },
+        "is_bidirectional": false,
+        "available_direction": "INCOMING"
+      }
+    ],
+    "dropped_sessions": []
+  }
+}

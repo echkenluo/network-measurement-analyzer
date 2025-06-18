@@ -1,0 +1,24 @@
+{
+  "nodes": {
+    "/home/echken/logs/cluster1/node31": {
+      "storage_ip": "192.168.254.31",
+      "management_ip": "10.216.19.31"
+    },
+    "/home/echken/logs/cluster1/node32": {
+      "storage_ip": "192.168.254.32",
+      "management_ip": "10.216.19.32"
+    },
+    "/home/echken/logs/cluster1/node33": {
+      "storage_ip": "192.168.254.33",
+      "management_ip": "10.216.19.33"
+    },
+    "/var/log/cluster2/node1": {
+      "storage_ip": "192.168.254.34",
+      "management_ip": "10.216.19.34"
+    },
+    "/opt/monitoring/logs/node-alpha": {
+      "storage_ip": "192.168.254.42",
+      "management_ip": "10.216.19.42"
+    }
+  }
+} 

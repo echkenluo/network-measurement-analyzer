@@ -1,0 +1,266 @@
+{
+  "node_pairs": [
+    {
+      "pair_name": "Node1->Node10",
+      "src_ip": "172.16.64.150",
+      "dst_ip": "172.16.64.159",
+      "direction": "172.16.64.150->172.16.64.159"
+    },
+    {
+      "pair_name": "Node10->Node1",
+      "src_ip": "172.16.64.159",
+      "dst_ip": "172.16.64.150",
+      "direction": "172.16.64.159->172.16.64.150"
+    },
+    {
+      "pair_name": "Node2->Node9",
+      "src_ip": "172.16.64.151",
+      "dst_ip": "172.16.64.158",
+      "direction": "172.16.64.151->172.16.64.158"
+    },
+    {
+      "pair_name": "Node9->Node2",
+      "src_ip": "172.16.64.158",
+      "dst_ip": "172.16.64.151",
+      "direction": "172.16.64.158->172.16.64.151"
+    },
+    {
+      "pair_name": "Node3->Node8",
+      "src_ip": "172.16.64.152",
+      "dst_ip": "172.16.64.157",
+      "direction": "172.16.64.152->172.16.64.157"
+    },
+    {
+      "pair_name": "Node8->Node3",
+      "src_ip": "172.16.64.157",
+      "dst_ip": "172.16.64.152",
+      "direction": "172.16.64.157->172.16.64.152"
+    },
+    {
+      "pair_name": "Node4->Node5",
+      "src_ip": "172.16.64.153",
+      "dst_ip": "172.16.64.154",
+      "direction": "172.16.64.153->172.16.64.154"
+    },
+    {
+      "pair_name": "Node5->Node4",
+      "src_ip": "172.16.64.154",
+      "dst_ip": "172.16.64.153",
+      "direction": "172.16.64.154->172.16.64.153"
+    },
+    {
+      "pair_name": "Node6->Node7",
+      "src_ip": "172.16.64.155",
+      "dst_ip": "172.16.64.156",
+      "direction": "172.16.64.155->172.16.64.156"
+    },
+    {
+      "pair_name": "Node7->Node6",
+      "src_ip": "172.16.64.156",
+      "dst_ip": "172.16.64.155",
+      "direction": "172.16.64.156->172.16.64.155"
+    }
+  ],
+  "total_sessions": 4872,
+  "matched_sessions": 0,
+  "outgoing_only": 0,
+  "incoming_only": 4872,
+  "overall_analysis": {
+    "total_valid_sessions": 50,
+    "sessions_with_latency": 50,
+    "latency_distribution": {
+      ">60000ms": 45,
+      "0-10ms": 5
+    },
+    "latency_distribution_above_10ms": {
+      ">60000ms": 45
+    },
+    "stage_distribution": {
+      "Path1_1->2": 45
+    },
+    "latency_statistics": {
+      "count": 50,
+      "mean": 729676771.07786,
+      "median": 757151971.4525,
+      "min": 18.39,
+      "max": 1587573798.255,
+      "std": 463980214.5717195,
+      "p95": 1412357392.043,
+      "p99": 1587573798.255
+    },
+    "range_percentages": {
+      ">60000ms": 90.0,
+      "0-10ms": 10.0
+    },
+    "stage_percentages": {
+      "Path1_1->2": 100.0
+    },
+    "range_percentages_above_10ms": {
+      ">60000ms": 100.0
+    }
+  },
+  "dropped_sessions_analysis": {
+    "total_dropped_sessions": 4822,
+    "stage_distribution": {
+      "Path2_9->12": 4650,
+      "Path1_2->5": 19,
+      "Path1_5->6": 60,
+      "Path1_0->1": 55,
+      "Path1_4->5": 4,
+      "Path1_3->4": 22,
+      "Path1_3->5": 7,
+      "Path2_10->12": 5
+    },
+    "drop_reason_distribution": {
+      "INCOMING_Stage_1_to_2_SKB_Mismatch": 4822
+    },
+    "stage_percentages": {
+      "Path2_9->12": 96.43301534632933,
+      "Path1_2->5": 0.3940273745333886,
+      "Path1_5->6": 1.244296972210701,
+      "Path1_0->1": 1.140605557859809,
+      "Path1_4->5": 0.08295313148071339,
+      "Path1_3->4": 0.45624222314392365,
+      "Path1_3->5": 0.14516798009124846,
+      "Path2_10->12": 0.10369141435089176
+    },
+    "drop_reason_percentages": {
+      "INCOMING_Stage_1_to_2_SKB_Mismatch": 100.0
+    }
+  },
+  "pair_analysis": {
+    "Node2->Node9": {
+      "total_sessions": 4,
+      "latency_distribution": {
+        ">60000ms": 4
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 4
+      },
+      "stage_distribution": {
+        "Path1_1->2": 4
+      },
+      "latency_statistics": {
+        "count": 4,
+        "mean": 858793600.411,
+        "median": 886278893.324,
+        "min": 764075732.319,
+        "max": 898540882.677,
+        "std": 63503088.51613205,
+        "p95": 898540882.677,
+        "p99": 898540882.677
+      }
+    },
+    "Node9->Node2": {
+      "total_sessions": 5,
+      "latency_distribution": {
+        ">60000ms": 5
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 5
+      },
+      "stage_distribution": {
+        "Path1_1->2": 5
+      },
+      "latency_statistics": {
+        "count": 5,
+        "mean": 686756726.8268,
+        "median": 750228210.586,
+        "min": 250074633.32,
+        "max": 916706576.355,
+        "std": 253964491.212884,
+        "p95": 916706576.355,
+        "p99": 916706576.355
+      }
+    },
+    "Node4->Node5": {
+      "total_sessions": 5,
+      "latency_distribution": {
+        ">60000ms": 5
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 5
+      },
+      "stage_distribution": {
+        "Path1_1->2": 5
+      },
+      "latency_statistics": {
+        "count": 5,
+        "mean": 895022027.1582,
+        "median": 891066166.416,
+        "min": 273851403.826,
+        "max": 1333905137.652,
+        "std": 456868238.30515265,
+        "p95": 1333905137.652,
+        "p99": 1333905137.652
+      }
+    },
+    "Node5->Node4": {
+      "total_sessions": 15,
+      "latency_distribution": {
+        ">60000ms": 15
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 15
+      },
+      "stage_distribution": {
+        "Path1_1->2": 15
+      },
+      "latency_statistics": {
+        "count": 15,
+        "mean": 925988202.2944667,
+        "median": 967855233.57,
+        "min": 197008475.559,
+        "max": 1587573798.255,
+        "std": 456076328.9864171,
+        "p95": 1587573798.255,
+        "p99": 1587573798.255
+      }
+    },
+    "Node6->Node7": {
+      "total_sessions": 2,
+      "latency_distribution": {
+        ">60000ms": 2
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 2
+      },
+      "stage_distribution": {
+        "Path1_1->2": 2
+      },
+      "latency_statistics": {
+        "count": 2,
+        "mean": 342551162.6305,
+        "median": 342551162.6305,
+        "min": 338554892.651,
+        "max": 346547432.61,
+        "std": 5651579.203913344,
+        "p95": 346547432.61,
+        "p99": 346547432.61
+      }
+    },
+    "Node7->Node6": {
+      "total_sessions": 19,
+      "latency_distribution": {
+        ">60000ms": 14,
+        "0-10ms": 5
+      },
+      "latency_distribution_above_10ms": {
+        ">60000ms": 14
+      },
+      "stage_distribution": {
+        "Path1_1->2": 14
+      },
+      "latency_statistics": {
+        "count": 19,
+        "mean": 556044474.8761053,
+        "median": 416196743.626,
+        "min": 18.39,
+        "max": 1247145779.434,
+        "std": 520057615.50021493,
+        "p95": 1247145779.434,
+        "p99": 1247145779.434
+      }
+    }
+  }
+}

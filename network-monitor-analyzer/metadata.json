@@ -1,0 +1,23 @@
+{
+    "task_uuid": "733043c0-ca8a-4075-b17d-6c674d24736c",
+    "node_list": [
+        "192.168.254.32",
+        "192.168.254.33",
+        "192.168.254.34",
+        "192.168.254.31",
+        "192.168.254.43",
+        "192.168.254.42",
+        "192.168.254.44"
+    ],
+    "groups": null,
+    "services": null,
+    "collect_start_timestamp": 1749454911,
+    "collect_end_timestamp": 1749455090,
+    "start_timestamp": 1748707200,
+    "end_timestamp": 1749452400,
+    "path": "/usr/share/tuna/log_collector/logs/cluster-logs-Cluster-M10_Prod-01-2025060100-2025060915-733043c0.zip",
+    "size": 2658786074,
+    "status": "successful",
+    "owner": "10.216.19.31",
+    "progress": "100%"
+}

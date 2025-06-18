@@ -1,0 +1,24 @@
+{
+  "nodes": {
+    "/Users/admin/workspace/network-measurement-analyzer/data/cluster-logs-2025070301-2025070303-0ef90cfa/10_19_26_101_0ef90cfa-85e5-44ea-8920-12de78ca7a46/tuna_logs/network-monitor": {
+      "storage_ip": "10.19.26.101",
+      "management_ip": "10.19.24.101"
+    },
+    "/Users/admin/workspace/network-measurement-analyzer/data/cluster-logs-2025070301-2025070303-0ef90cfa/10_19_26_102_0ef90cfa-85e5-44ea-8920-12de78ca7a46/tuna_logs/network-monitor": {
+      "storage_ip": "10.19.26.102",
+      "management_ip": "10.19.24.102"
+    },
+    "/Users/admin/workspace/network-measurement-analyzer/data/cluster-logs-2025070301-2025070303-0ef90cfa/10_19_26_103_0ef90cfa-85e5-44ea-8920-12de78ca7a46/tuna_logs/network-monitor": {
+      "storage_ip": "10.19.26.103",
+      "management_ip": "10.19.24.103"
+    },
+    "/Users/admin/workspace/network-measurement-analyzer/data/cluster-logs-2025070301-2025070303-0ef90cfa/10_19_26_104_0ef90cfa-85e5-44ea-8920-12de78ca7a46/tuna_logs/network-monitor": {
+      "storage_ip": "10.19.26.104",
+      "management_ip": "10.19.24.104"
+    },
+    "/Users/admin/workspace/network-measurement-analyzer/data/cluster-logs-2025070301-2025070303-0ef90cfa/10_19_26_105_0ef90cfa-85e5-44ea-8920-12de78ca7a46/tuna_logs/network-monitor": {
+      "storage_ip": "10.19.26.105",
+      "management_ip": "10.19.24.105"
+    }
+  }
+} 

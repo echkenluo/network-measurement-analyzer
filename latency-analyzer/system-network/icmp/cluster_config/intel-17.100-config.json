@@ -1,0 +1,13 @@
+{
+  "name": "intel_17_100_network_analysis",
+  "output_dir": "./results",
+  "node_pairs": [
+    {
+      "name": "intel_100_107",
+      "src_ip": "10.255.0.100",
+      "dst_ip": "10.255.0.107",
+      "outgoing_file": "./dogfood/intel/100-107/100-107tx.log",
+      "incoming_file": "./dogfood/intel/100-107/100-107rx.log"
+    }
+  ]
+} 

@@ -1,0 +1,175 @@
+{
+  "node_pairs": [
+    {
+      "pair_name": "Node2->Node12",
+      "src_ip": "192.168.254.32",
+      "dst_ip": "192.168.254.42",
+      "direction": "192.168.254.32->192.168.254.42"
+    },
+    {
+      "pair_name": "Node3->Node12",
+      "src_ip": "192.168.254.33",
+      "dst_ip": "192.168.254.42",
+      "direction": "192.168.254.33->192.168.254.42"
+    },
+    {
+      "pair_name": "Node4->Node12",
+      "src_ip": "192.168.254.34",
+      "dst_ip": "192.168.254.42",
+      "direction": "192.168.254.34->192.168.254.42"
+    }
+  ],
+  "total_sessions": 142,
+  "matched_sessions": 23,
+  "outgoing_only": 82,
+  "incoming_only": 37,
+  "overall_analysis": {
+    "total_valid_sessions": 142,
+    "sessions_with_latency": 142,
+    "latency_distribution": {
+      "500-1000ms": 27,
+      "100-500ms": 34,
+      "1000-3000ms": 35,
+      "0-10ms": 39,
+      "10-100ms": 7
+    },
+    "latency_distribution_above_10ms": {
+      "500-1000ms": 27,
+      "100-500ms": 34,
+      "1000-3000ms": 35,
+      "10-100ms": 7
+    },
+    "stage_distribution": {
+      "INCOMING_Path1_3->4": 23,
+      "Path1_3->4": 78,
+      "Path1_5->6": 2
+    },
+    "latency_statistics": {
+      "count": 142,
+      "mean": 636099.266387324,
+      "median": 421786.84349999996,
+      "min": 15.939,
+      "max": 2954964.483,
+      "std": 725107.0747557526,
+      "p95": 2133502.504,
+      "p99": 2847595.542
+    },
+    "range_percentages": {
+      "500-1000ms": 19.014084507042252,
+      "100-500ms": 23.943661971830984,
+      "1000-3000ms": 24.647887323943664,
+      "0-10ms": 27.464788732394368,
+      "10-100ms": 4.929577464788732
+    },
+    "stage_percentages": {
+      "INCOMING_Path1_3->4": 22.330097087378643,
+      "Path1_3->4": 75.72815533980582,
+      "Path1_5->6": 1.9417475728155338
+    },
+    "range_percentages_above_10ms": {
+      "500-1000ms": 26.21359223300971,
+      "100-500ms": 33.00970873786408,
+      "1000-3000ms": 33.980582524271846,
+      "10-100ms": 6.796116504854369
+    }
+  },
+  "dropped_sessions_analysis": {
+    "total_dropped_sessions": 0,
+    "stage_distribution": {},
+    "drop_reason_distribution": {}
+  },
+  "pair_analysis": {
+    "Node2->Node12": {
+      "total_sessions": 24,
+      "latency_distribution": {
+        "500-1000ms": 5,
+        "100-500ms": 6,
+        "1000-3000ms": 3,
+        "0-10ms": 9,
+        "10-100ms": 1
+      },
+      "latency_distribution_above_10ms": {
+        "500-1000ms": 5,
+        "100-500ms": 6,
+        "1000-3000ms": 3,
+        "10-100ms": 1
+      },
+      "stage_distribution": {
+        "INCOMING_Path1_3->4": 14,
+        "Path1_3->4": 1
+      },
+      "latency_statistics": {
+        "count": 24,
+        "mean": 361888.51841666666,
+        "median": 244738.93949999998,
+        "min": 15.939,
+        "max": 1242434.255,
+        "std": 399895.67799959955,
+        "p95": 1122621.689,
+        "p99": 1242434.255
+      }
+    },
+    "Node3->Node12": {
+      "total_sessions": 47,
+      "latency_distribution": {
+        "100-500ms": 10,
+        "0-10ms": 17,
+        "1000-3000ms": 10,
+        "500-1000ms": 7,
+        "10-100ms": 3
+      },
+      "latency_distribution_above_10ms": {
+        "100-500ms": 10,
+        "1000-3000ms": 10,
+        "500-1000ms": 7,
+        "10-100ms": 3
+      },
+      "stage_distribution": {
+        "INCOMING_Path1_3->4": 3,
+        "Path1_3->4": 26,
+        "Path1_5->6": 1
+      },
+      "latency_statistics": {
+        "count": 47,
+        "mean": 518865.18429787236,
+        "median": 231490.794,
+        "min": 16.976,
+        "max": 2125540.693,
+        "std": 639384.1140968989,
+        "p95": 1886092.982,
+        "p99": 2125540.693
+      }
+    },
+    "Node4->Node12": {
+      "total_sessions": 71,
+      "latency_distribution": {
+        "500-1000ms": 15,
+        "100-500ms": 18,
+        "1000-3000ms": 22,
+        "0-10ms": 13,
+        "10-100ms": 3
+      },
+      "latency_distribution_above_10ms": {
+        "500-1000ms": 15,
+        "100-500ms": 18,
+        "1000-3000ms": 22,
+        "10-100ms": 3
+      },
+      "stage_distribution": {
+        "INCOMING_Path1_3->4": 6,
+        "Path1_3->4": 51,
+        "Path1_5->6": 1
+      },
+      "latency_statistics": {
+        "count": 71,
+        "mean": 806395.8834225353,
+        "median": 570866.119,
+        "min": 4965.779,
+        "max": 2954964.483,
+        "std": 820643.9964441746,
+        "p95": 2611101.487,
+        "p99": 2954964.483
+      }
+    }
+  }
+}

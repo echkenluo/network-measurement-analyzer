@@ -1,0 +1,20 @@
+{
+  "name": "intel_102-21_network_analysis",
+  "output_dir": "./results",
+  "node_pairs": [
+    {
+      "name": "intel_102-21",
+      "src_ip": "10.255.0.102",
+      "dst_ip": "10.255.0.21",
+      "outgoing_file": "./dogfood/intel/100-107/102-21-tx.log",
+      "incoming_file": "./dogfood/intel/100-107/102-21-rx.log"
+    },
+    {
+      "name": "intel_21-102",
+      "src_ip": "10.255.0.21",
+      "dst_ip": "10.255.0.102",
+      "outgoing_file": "./dogfood/intel/100-107/21-102-tx.log",
+      "incoming_file": "./dogfood/intel/100-107/21-102-rx.log"
+    }
+  ]
+} 

@@ -1,0 +1,13 @@
+{
+  "name": "hygon_19_95_network_analysis",
+  "output_dir": "./results",
+  "node_pairs": [
+    {
+      "name": "hygon_95_96",
+      "src_ip": "10.0.19.95",
+      "dst_ip": "10.0.19.96",
+      "outgoing_file": "./dogfood/hygon/95tx.log",
+      "incoming_file": "./dogfood/hygon/96rx.log"
+    }
+  ]
+} 

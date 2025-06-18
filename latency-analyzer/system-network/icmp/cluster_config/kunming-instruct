@@ -1,0 +1,64 @@
+
+# node1 <-> node10
+# node 1
+./icmp_latency_monitor.sh     --src-ip 172.16.64.150 --dst-ip 172.16.64.159     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-1-10-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.159 --dst-ip 172.16.64.150     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-10-1-rx.log     --no-report
+# node 10
+./icmp_latency_monitor.sh     --src-ip 172.16.64.159 --dst-ip 172.16.64.150     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-10-1-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.150 --dst-ip 172.16.64.159     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-1-10-rx.log     --no-report
+
+# node2 <-> node9
+# node 2
+./icmp_latency_monitor.sh     --src-ip 172.16.64.151 --dst-ip 172.16.64.158     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-2-9-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.158 --dst-ip 172.16.64.151     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-9-2-rx.log     --no-report
+# node 9
+./icmp_latency_monitor.sh     --src-ip 172.16.64.158 --dst-ip 172.16.64.151     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-9-2-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.151 --dst-ip 172.16.64.158     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-2-9-rx.log     --no-report
+
+# node3 <-> node8
+# node 3
+./icmp_latency_monitor.sh     --src-ip 172.16.64.152 --dst-ip 172.16.64.157     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-3-8-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.157 --dst-ip 172.16.64.152     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-8-3-rx.log     --no-report
+# node 8
+./icmp_latency_monitor.sh     --src-ip 172.16.64.157 --dst-ip 172.16.64.152     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-8-3-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.152 --dst-ip 172.16.64.157     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-3-8-rx.log     --no-report
+
+# node4 <-> node5
+# node 4
+./icmp_latency_monitor.sh     --src-ip 172.16.64.153 --dst-ip 172.16.64.154     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-4-5-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.154 --dst-ip 172.16.64.153     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-5-4-rx.log     --no-report
+# node 5
+./icmp_latency_monitor.sh     --src-ip 172.16.64.154 --dst-ip 172.16.64.153     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-5-4-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.153 --dst-ip 172.16.64.154     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-4-5-rx.log     --no-report
+
+# node6 <-> node7
+# node 6
+./icmp_latency_monitor.sh     --src-ip 172.16.64.155 --dst-ip 172.16.64.156     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-6-7-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.156 --dst-ip 172.16.64.155     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-7-6-rx.log     --no-report
+# node 7
+./icmp_latency_monitor.sh     --src-ip 172.16.64.156 --dst-ip 172.16.64.155     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms 100 --direction outgoing     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-7-6-tx.log     --no-report
+./icmp_latency_monitor.sh     --src-ip 172.16.64.155 --dst-ip 172.16.64.156     --phy-iface1 enp193s0f1np1  --phy-iface2 enp33s0f1np1  --latency-ms  10 --direction incoming     --perf-duration 5 --perf-interval 10     --log-file ./icmp-monitor-6-7-rx.log     --no-report
+
+
+
+
+# node1
+./drop.py --protocol icmp --src 172.16.64.159 --dst 172.16.64.150 > ./drop-10-1.log & 
+# node10
+./drop.py --protocol icmp --src 172.16.64.150 --dst 172.16.64.159 > ./drop-1-10.log &
+# node9
+./drop.py --protocol icmp --src 172.16.64.151 --dst 172.16.64.158 > ./drop-2-9.log &
+# node2
+./drop.py --protocol icmp --src 172.16.64.158 --dst 172.16.64.151 > ./drop-9-2.log &
+# node8
+./drop.py --protocol icmp --src 172.16.64.152 --dst 172.16.64.157 > ./drop-3-8.log &
+# node3
+./drop.py --protocol icmp --src 172.16.64.157 --dst 172.16.64.152 > ./drop-8-3.log &
+# node5
+./drop.py --protocol icmp --src 172.16.64.153 --dst 172.16.64.154 > ./drop-4-5.log &
+# node4
+./drop.py --protocol icmp --src 172.16.64.154 --dst 172.16.64.153 > ./drop-5-4.log &
+# node7
+./drop.py --protocol icmp --src 172.16.64.155 --dst 172.16.64.156 > ./drop-6-7.log &
+# node6
+./drop.py --protocol icmp --src 172.16.64.156 --dst 172.16.64.155 > ./drop-7-6.log &

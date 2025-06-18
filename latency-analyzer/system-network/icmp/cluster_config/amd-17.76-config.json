@@ -1,0 +1,13 @@
+{
+  "name": "amd_18_76_network_analysis",
+  "output_dir": "./results",
+  "node_pairs": [
+    {
+      "name": "amd_18_76",
+      "src_ip": "10.1.18.76",
+      "dst_ip": "10.1.18.75",
+      "outgoing_file": "./dogfood/amd/18.76-18.75/76-75tx.log",
+      "incoming_file": "./dogfood/amd/18.76-18.75/76-75rx.log"
+    }
+  ]
+} 

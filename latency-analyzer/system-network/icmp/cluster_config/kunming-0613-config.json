@@ -1,0 +1,77 @@
+{
+  "name": "kunming_06-13",
+  "description": "Kunming cluster network latency analysis for 5 node pairs (10 directions)",
+  "output_dir": "results",
+  "node_pairs": [
+    {
+      "name": "Node1->Node10",
+      "src_ip": "172.16.64.150",
+      "dst_ip": "172.16.64.159",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node1/root/icmp-monitor-1-10-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node10/root/icmp-monitor-1-10-rx.log"
+    },
+    {
+      "name": "Node10->Node1", 
+      "src_ip": "172.16.64.159",
+      "dst_ip": "172.16.64.150",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node10/root/icmp-monitor-10-1-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node1/root/icmp-monitor-10-1-rx.log"
+    },
+    {
+      "name": "Node2->Node9",
+      "src_ip": "172.16.64.151", 
+      "dst_ip": "172.16.64.158",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node2/root/icmp-monitor-2-9-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node9/root/icmp-monitor-2-9-rx.log"
+    },
+    {
+      "name": "Node9->Node2",
+      "src_ip": "172.16.64.158",
+      "dst_ip": "172.16.64.151", 
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node9/root/icmp-monitor-9-2-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node2/root/icmp-monitor-9-2-rx.log"
+    },
+    {
+      "name": "Node3->Node8",
+      "src_ip": "172.16.64.152",
+      "dst_ip": "172.16.64.157",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node3/root/icmp-monitor-3-8-tx.log", 
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node8/root/icmp-monitor-3-8-rx.log"
+    },
+    {
+      "name": "Node8->Node3",
+      "src_ip": "172.16.64.157",
+      "dst_ip": "172.16.64.152",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node8/root/icmp-monitor-8-3-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node3/root/icmp-monitor-8-3-rx.log"
+    },
+    {
+      "name": "Node4->Node5",
+      "src_ip": "172.16.64.153",
+      "dst_ip": "172.16.64.154",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node4/root/icmp-monitor-4-5-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node5/root/icmp-monitor-4-5-rx.log"
+    },
+    {
+      "name": "Node5->Node4", 
+      "src_ip": "172.16.64.154",
+      "dst_ip": "172.16.64.153",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node5/root/icmp-monitor-5-4-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node4/root/icmp-monitor-5-4-rx.log"
+    },
+    {
+      "name": "Node6->Node7",
+      "src_ip": "172.16.64.155",
+      "dst_ip": "172.16.64.156", 
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node6/root/icmp-monitor-6-7-tx.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node7/root/icmp-monitor-6-7-rx.log"
+    },
+    {
+      "name": "Node7->Node6",
+      "src_ip": "172.16.64.156",
+      "dst_ip": "172.16.64.155",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node7/root/icmp-monitor-7-6-tx.log", 
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/kunming-0616/node6/root/icmp-monitor-7-6-rx.log"
+    }
+  ]
+} 

@@ -1,0 +1,77 @@
+{
+  "name": "kunming_analysis",
+  "description": "Kunming cluster network latency analysis for 5 node pairs (10 directions)",
+  "output_dir": "results",
+  "node_pairs": [
+    {
+      "name": "Node1->Node10",
+      "src_ip": "172.16.64.150",
+      "dst_ip": "172.16.64.159",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-1_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-10_rtt/incoming.log"
+    },
+    {
+      "name": "Node10->Node1", 
+      "src_ip": "172.16.64.159",
+      "dst_ip": "172.16.64.150",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-10_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-1_rtt/incoming.log"
+    },
+    {
+      "name": "Node2->Node9",
+      "src_ip": "172.16.64.151", 
+      "dst_ip": "172.16.64.158",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-2_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-9_rtt/incoming.log"
+    },
+    {
+      "name": "Node9->Node2",
+      "src_ip": "172.16.64.158",
+      "dst_ip": "172.16.64.151", 
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-9_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-2_rtt/incoming.log"
+    },
+    {
+      "name": "Node3->Node8",
+      "src_ip": "172.16.64.152",
+      "dst_ip": "172.16.64.157",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-3_rtt/outgoing.log", 
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-8_rtt/incoming.log"
+    },
+    {
+      "name": "Node8->Node3",
+      "src_ip": "172.16.64.157",
+      "dst_ip": "172.16.64.152",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-8_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-3_rtt/incoming.log"
+    },
+    {
+      "name": "Node4->Node5",
+      "src_ip": "172.16.64.153",
+      "dst_ip": "172.16.64.154",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-4_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-5_rtt/incoming.log"
+    },
+    {
+      "name": "Node5->Node4", 
+      "src_ip": "172.16.64.154",
+      "dst_ip": "172.16.64.153",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-5_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-4_rtt/incoming.log"
+    },
+    {
+      "name": "Node6->Node7",
+      "src_ip": "172.16.64.155",
+      "dst_ip": "172.16.64.156", 
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-6_rtt/outgoing.log",
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-7_rtt/incoming.log"
+    },
+    {
+      "name": "Node7->Node6",
+      "src_ip": "172.16.64.156",
+      "dst_ip": "172.16.64.155",
+      "outgoing_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-7_rtt/outgoing.log", 
+      "incoming_file": "/home/echken/workspace/troubleshooting-tools/tmp/performance/latency/kunming/home/smartx/cls3-node-6_rtt/incoming.log"
+    }
+  ]
+} 

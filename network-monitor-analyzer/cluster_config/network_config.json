@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-1_rtt": {
+      "storage_ip": "172.16.64.150",
+      "management_ip": "10.206.64.88"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-2_rtt": {
+      "storage_ip": "172.16.64.151",
+      "management_ip": "10.206.64.89"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-3_rtt": {
+      "storage_ip": "172.16.64.152",
+      "management_ip": "10.206.64.90"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-4_rtt": {
+      "storage_ip": "172.16.64.153",
+      "management_ip": "10.206.64.91"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-5_rtt": {
+      "storage_ip": "172.16.64.154",
+      "management_ip": "10.206.64.92"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-6_rtt": {
+      "storage_ip": "172.16.64.155",
+      "management_ip": "10.206.64.93"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-7_rtt": {
+      "storage_ip": "172.16.64.156",
+      "management_ip": "10.206.64.94"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-8_rtt": {
+      "storage_ip": "172.16.64.157",
+      "management_ip": "10.206.64.95"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-9_rtt": {
+      "storage_ip": "172.16.64.158",
+      "management_ip": "10.206.64.96"
+    },
+    "/home/echken/workspace/network-measurement-analyzer/.data/network-monitor-analyzer/kunming/0515/cls3-node-10_rtt": {
+      "storage_ip": "172.16.64.159",
+      "management_ip": "10.206.64.97"
+    }
+  }
+} 

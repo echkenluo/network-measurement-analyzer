@@ -1,0 +1,28 @@
+{
+  "name": "xiaomi_analysis",
+  "description": "xiaomi cluster network latency analysis ",
+  "output_dir": "results",
+  "node_pairs": [
+    {
+      "name": "Node2->Node12",
+      "src_ip": "192.168.254.32",
+      "dst_ip": "192.168.254.42",
+      "outgoing_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/32-42-storage-tx.log",
+      "incoming_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/32-42-storage-rx.log"
+    },
+    {
+      "name": "Node3->Node12", 
+      "src_ip": "192.168.254.33",
+      "dst_ip": "192.168.254.42",
+      "outgoing_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/33-42-storage-tx.log",
+      "incoming_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/33-42-storage-rx.log"
+    },
+    {
+      "name": "Node4->Node12",
+      "src_ip": "192.168.254.34",
+      "dst_ip": "192.168.254.42",
+      "outgoing_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/34-42-storage-tx.log",
+      "incoming_file": "/home/echken/workspace/network-monitor-analyer/xiaomi-storage-drop/34-42-storage-rx.log"
+    }
+  ]
+} 

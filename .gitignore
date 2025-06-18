@@ -1,0 +1,12 @@
+# ---- Archive files (ignored everywhere) ----
+*.zip
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.xz
+*.rar
+*.7z
+*.Z
+data/
+**/.results/
