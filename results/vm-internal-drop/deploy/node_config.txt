@@ -6,5 +6,5 @@ service_file="rarp-consumer.service"
 install_script="deploy_service.sh"
 
 # stage2
-192.168.79.23,root,echken9527
-192.168.72.171,root,echken9527
+192.168.79.23,root,pwd
+192.168.72.171,root,pwd

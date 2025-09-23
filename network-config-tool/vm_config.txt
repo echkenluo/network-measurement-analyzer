@@ -1,0 +1,6 @@
+# network_configs
+net.core.busy_read=0
+
+# nodes
+172.21.153.113,root,<pwd>
+172.21.153.114,root,<pwd>
