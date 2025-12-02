@@ -9,4 +9,4 @@
 *.7z
 *.Z
 data/
-**/.results/
+**/results/
